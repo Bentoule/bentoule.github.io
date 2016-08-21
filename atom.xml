@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="bentoule.github.io/"/>
-  <updated>2016-08-21T01:18:19.105Z</updated>
+  <updated>2016-08-20T05:39:34.945Z</updated>
   <id>bentoule.github.io/</id>
   
   <author>
@@ -14,45 +14,6 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>GitHub+Hexo 配置系列教程 -HEXO配置 （一）</title>
-    <link href="bentoule.github.io/2016/08/21/GitHub-Hexo-%E9%85%8D%E7%BD%AE%E7%B3%BB%E5%88%97%E6%95%99%E7%A8%8B-HEXO%E9%85%8D%E7%BD%AE-%EF%BC%88%E4%B8%80%EF%BC%89/"/>
-    <id>bentoule.github.io/2016/08/21/GitHub-Hexo-配置系列教程-HEXO配置-（一）/</id>
-    <published>2016-08-21T00:13:13.000Z</published>
-    <updated>2016-08-21T01:18:19.105Z</updated>
-    
-    <content type="html"><![CDATA[<p><img src="http://i.imgur.com/BH4PUrV.png" alt=""></p>
-<h1 id="什么是Hexo"><a href="#什么是Hexo" class="headerlink" title="什么是Hexo"></a>什么是Hexo</h1><p>Hexo是一个快速、简洁且高效的博客框架,可以方便的生成静态网页托管在github和Heroku上。作者是来自台湾的@tommy351。引用@tommy351的话，Hexo:</p>
-<ul>
-<li><p>快速、简单且功能强大的 Node.js 博客框架。</p>
-</li>
-<li><p>A fast, simple &amp; powerful blog framework, powered by Node.js.</p>
-</li>
-</ul>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;img src=&quot;http://i.imgur.com/BH4PUrV.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;h1 id=&quot;什么是Hexo&quot;&gt;&lt;a href=&quot;#什么是Hexo&quot; class=&quot;headerlink&quot; title=&quot;什么是Hexo&quot;&gt;&lt;/a&gt;什么是Hexo&lt;
-    
-    </summary>
-    
-      <category term="HEXO" scheme="bentoule.github.io/categories/HEXO/"/>
-    
-    
-      <category term="HEXO" scheme="bentoule.github.io/tags/HEXO/"/>
-    
-      <category term="HEXO配置" scheme="bentoule.github.io/tags/HEXO%E9%85%8D%E7%BD%AE/"/>
-    
-      <category term="node.js" scheme="bentoule.github.io/tags/node-js/"/>
-    
-      <category term="GIT" scheme="bentoule.github.io/tags/GIT/"/>
-    
-      <category term="Github" scheme="bentoule.github.io/tags/Github/"/>
-    
-  </entry>
   
   <entry>
     <title>Hello World</title>
