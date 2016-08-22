@@ -4,9 +4,9 @@
   
   <link href="/atom.xml" rel="self"/>
   
-  <link href="bentoule.github.io/"/>
+  <link href="http://bentoule.github.io/"/>
   <updated>2016-08-21T10:09:25.247Z</updated>
-  <id>bentoule.github.io/</id>
+  <id>http://bentoule.github.io/</id>
   
   <author>
     <name>Jason</name>
@@ -17,8 +17,8 @@
   
   <entry>
     <title>GitHub+Hexo 配置系列教程 -HEXO配置 （一）</title>
-    <link href="bentoule.github.io/2016/08/21/GitHub-Hexo-%E9%85%8D%E7%BD%AE%E7%B3%BB%E5%88%97%E6%95%99%E7%A8%8B-HEXO%E9%85%8D%E7%BD%AE-%EF%BC%88%E4%B8%80%EF%BC%89/"/>
-    <id>bentoule.github.io/2016/08/21/GitHub-Hexo-配置系列教程-HEXO配置-（一）/</id>
+    <link href="http://bentoule.github.io/2016/08/21/GitHub-Hexo-%E9%85%8D%E7%BD%AE%E7%B3%BB%E5%88%97%E6%95%99%E7%A8%8B-HEXO%E9%85%8D%E7%BD%AE-%EF%BC%88%E4%B8%80%EF%BC%89/"/>
+    <id>http://bentoule.github.io/2016/08/21/GitHub-Hexo-配置系列教程-HEXO配置-（一）/</id>
     <published>2016-08-21T00:13:13.000Z</published>
     <updated>2016-08-21T10:09:25.247Z</updated>
     
@@ -38,25 +38,25 @@
     
     </summary>
     
-      <category term="HEXO" scheme="bentoule.github.io/categories/HEXO/"/>
+      <category term="HEXO" scheme="http://bentoule.github.io/categories/HEXO/"/>
     
     
-      <category term="HEXO" scheme="bentoule.github.io/tags/HEXO/"/>
+      <category term="HEXO" scheme="http://bentoule.github.io/tags/HEXO/"/>
     
-      <category term="HEXO配置" scheme="bentoule.github.io/tags/HEXO%E9%85%8D%E7%BD%AE/"/>
+      <category term="HEXO配置" scheme="http://bentoule.github.io/tags/HEXO%E9%85%8D%E7%BD%AE/"/>
     
-      <category term="node.js" scheme="bentoule.github.io/tags/node-js/"/>
+      <category term="node.js" scheme="http://bentoule.github.io/tags/node-js/"/>
     
-      <category term="GIT" scheme="bentoule.github.io/tags/GIT/"/>
+      <category term="GIT" scheme="http://bentoule.github.io/tags/GIT/"/>
     
-      <category term="Github" scheme="bentoule.github.io/tags/Github/"/>
+      <category term="Github" scheme="http://bentoule.github.io/tags/Github/"/>
     
   </entry>
   
   <entry>
     <title>Hello World</title>
-    <link href="bentoule.github.io/2016/08/20/hello-world/"/>
-    <id>bentoule.github.io/2016/08/20/hello-world/</id>
+    <link href="http://bentoule.github.io/2016/08/20/hello-world/"/>
+    <id>http://bentoule.github.io/2016/08/20/hello-world/</id>
     <published>2016-08-20T05:39:34.945Z</published>
     <updated>2016-08-21T10:21:43.712Z</updated>
     
