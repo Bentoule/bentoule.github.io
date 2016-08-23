@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://bentoule.github.io/"/>
-  <updated>2016-08-23T01:22:48.642Z</updated>
+  <updated>2016-08-23T01:50:48.381Z</updated>
   <id>http://bentoule.github.io/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://bentoule.github.io/2016/08/21/GitHub-Hexo-%E9%85%8D%E7%BD%AE%E7%B3%BB%E5%88%97%E6%95%99%E7%A8%8B-HEXO%E9%85%8D%E7%BD%AE-%EF%BC%88%E4%B8%80%EF%BC%89/"/>
     <id>http://bentoule.github.io/2016/08/21/GitHub-Hexo-配置系列教程-HEXO配置-（一）/</id>
     <published>2016-08-21T00:13:13.000Z</published>
-    <updated>2016-08-23T01:22:48.642Z</updated>
+    <updated>2016-08-23T01:50:48.381Z</updated>
     
     <content type="html"><![CDATA[<h1 id="什么是Hexo"><a href="#什么是Hexo" class="headerlink" title="什么是Hexo"></a>什么是Hexo</h1><p>Hexo是一个快速、简洁且高效的博客框架,可以方便的生成静态网页托管在github和Heroku上。作者是来自台湾的@tommy351。引用@tommy351的话，Hexo:</p>
 <a id="more"></a>
@@ -56,13 +56,13 @@
 <li>Hexo的使用需要使用到GitHub,Git,MardDown,Node.js这几种工具,另外部分插件,主题,widget需要自己安装,设置.所以使用Hexo相对有一些计算机基础的人比较简单, 但是即使是小白,只要按照这个教程,也可以很快的入手.</li>
 </ul>
 <h1 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h1><p>本博客所用Hexo版本为3.2.0,部分文件或与其他版本不同.<br>本教程只针对Windows版本,</p>
-<h1 id="Hexo博客搭建"><a href="#Hexo博客搭建" class="headerlink" title="Hexo博客搭建"></a>Hexo博客搭建</h1><p>安装Git。推荐大家使用：msysgit<br><a href="https://git-for-windows.github.io/" title="点击这里前往官方网站下载" target="_blank" rel="external">https://git-for-windows.github.io/</a><br>下载并安装Git即可完成. </p>
+<h1 id="Hexo博客搭建"><a href="#Hexo博客搭建" class="headerlink" title="Hexo博客搭建"></a>Hexo博客搭建</h1><h2 id="安装Git"><a href="#安装Git" class="headerlink" title="安装Git"></a>安装Git</h2><p>推荐大家使用：msysgit <a href="https://git-for-windows.github.io/" title="点击这里前往官方网站下载" target="_blank" rel="external">https://git-for-windows.github.io/</a><br>下载并安装Git即可完成. </p>
+<h2 id="安装Node-js"><a href="#安装Node-js" class="headerlink" title="安装Node.js"></a>安装Node.js</h2><p>windows环境下的Node.js的安装很简单,只需要下载客户端一路next就行了,我选择的是<a href="http://https://nodejs.org/en/" target="_blank" rel="external">v6.4.0LTS版</a>本64位的 </p>
 <ul>
-<li><p>查看Git安装是否完成,在win+r中输入cmd命令窗口弹出后,输入git –version查看git版本</p>
-<p>  git –version</p>
-</li>
+<li>查看Node.js是否安装完成,在win+r中输入cmd命令窗口弹出后,输入node -v查看node版本</li>
 </ul>
-<p><img src="http://i.imgur.com/0hH8ojD.jpg" alt=""></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">node -v</div></pre></td></tr></table></figure>
+<p><img src="/img/2016/08/21/1.png" alt=""></p>
 ]]></content>
     
     <summary type="html">
