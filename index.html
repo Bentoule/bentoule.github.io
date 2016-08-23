@@ -247,51 +247,14 @@
         
         <div class="article-entry" itemprop="articleBody">
         
-            
-            <p>上一篇中我们介绍了如何配置GitHub端的具体操作,接下来,就是将Hexo与GitHub进行关联</p>
+            <p><p>上一篇中我们介绍了如何配置GitHub端的具体操作,接下来,就是将Hexo与GitHub进行关联</p>
 <h1 id="在Hexo配置文件中关联GitHub账号"><a href="#在Hexo配置文件中关联GitHub账号" class="headerlink" title="在Hexo配置文件中关联GitHub账号"></a>在Hexo配置文件中关联GitHub账号</h1><ul>
 <li>1.找到刚才所建的目录(F:\Hexo下),编辑 _config.yml,拖到最下方,找到deploy标签,然后更为如下配置,注意:你自己在修改时,需要将 suericze修改为自己的用户名 </li>
 </ul>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">deploy: </div><div class="line"></div><div class="line"><span class="built_in">type</span>: git </div><div class="line"></div><div class="line">repository: https://github.com/suericze/suericze.github.io.git </div><div class="line"></div><div class="line">branch: master</div></pre></td></tr></table></figure>
-<ul>
-<li>2.注意: 因yml格式问题,所有键值对的”:”冒号后面必须跟有一个空格</li>
-<li>3.注意: 自Hexo 3.0以后,type类型都为 git,而非 github</li>
-<li>4.然后在F:/Hexo目录下,右键,选择Git Bash,输入以下命令即可完成部署和同步<br>命令如下: </li>
-</ul>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ hexo generate <span class="comment">#或 hexo g </span></div><div class="line">$ hexo deploy <span class="comment">#或 hexo d</span></div></pre></td></tr></table></figure>
-<ul>
-<li><p>5.到此我们的博客已经完全搭建并关联起来了,现在在浏览器中访问suericze.github.io即可看到自己的成就.<br>注意事项</p>
-</li>
-<li><p>每次在本地进行改动后,不管是什么改动,都需要在F:\Hexo 文件夹下打开Git Bash,执行hexo g</p>
-</li>
-<li>如果需要同步到github中,则在执行完hexo g命令后,再次执行hexo d即可</li>
-<li>在执行hexo d命令时,会让输入你的github邮箱和密码,在输入密码时为了安全考虑,输入字符时是不会显示的,请放心输入</li>
-<li>有的电脑在执行hexo d命令时,会出现ERROR Deployer not found: github 的错误提示,该错误原因有以下几点 </li>
-</ul>
-<blockquote>
-<p>在_config.yml文件中,deploy模块中冒号后面没有加空格</p>
-<p>将type类型写成了github,正确写法是git</p>
-<p>在改文件夹下执行 npm install hexo-deployer-git –save 命令后重新执行 hexo d命令</p>
-<p>将Git Bash命令关掉,重新打开执行 </p>
-</blockquote>
-<ul>
-<li><p>6.在github端设置完成后,有时候直接访问会出现404错误,这是正常的,一般等待十分钟左右就可以访问了,如果还不行,可能是你在注册账号的时候没有验证邮箱中的邮件.</p>
-</li>
-<li><p>7.如遇到其他不可解决的问题,可以尝试删除.deploy_git文件夹及db.json,再次重新生成即可</p>
-</li>
-<li><h1 id="发布一篇文章"><a href="#发布一篇文章" class="headerlink" title="发布一篇文章"></a>发布一篇文章</h1></li>
-</ul>
-<p>既然博客已经搭建完毕,现在肯定想跃跃欲试,发布一篇博客,所以我们需要更改一些默认设置,来将站点打造成真正属于自己的网站.</p>
-<p>博客配置一般需要用到两个文件,一个是对全局进行配置的<strong>_config.yml</strong>文件,另一个是对主题进行配置的文件(暂时还没有设置,找到后后续补充)</p>
-<p>F:\Hexo_config.yml</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># Hexo Configuration #</span></div><div class="line"><span class="comment"># Docs: https://hexo.io/docs/configuration.html #</span></div><div class="line"><span class="comment"># Source: https://github.com/hexojs/hexo/</span></div><div class="line"><span class="comment"># Site </span></div><div class="line">   title: Test <span class="comment">#网站名称 </span></div><div class="line">   subtitle: Test <span class="comment">#副标题,在titile下方可看到 </span></div><div class="line">   description: des <span class="comment">#描述,可自定义 </span></div><div class="line">   author: au <span class="comment">#作者,可以在左下角看到 </span></div><div class="line">   language: zh-CN <span class="comment">#中文 </span></div><div class="line">   timezone: PRC <span class="comment">#时区 People's Republic of China，中华人民共和国</span></div><div class="line"></div><div class="line">``` </div><div class="line"></div><div class="line">**现在可以执行hexo g和hexo d命令来查看更改的效果了.**</div><div class="line"></div><div class="line">发布文章</div><div class="line"></div><div class="line">- 1.在F:\Hexo下打开Git Bash命令,执行hexo n <span class="string">"This my first blog"</span></div><div class="line">- 2.创建成功后,就可以在F:\Hexo\source_posts中看到该md文件,在这里,可以使用MarkdownPad 2 或者 记事本 打开,然后进行自定义更改</div><div class="line"></div><div class="line">![](/img/2016/08/23/11.png)</div><div class="line"></div><div class="line">``` bash</div><div class="line"> </div><div class="line">  title: This my first blog <span class="comment">#这里是正文,可以更改</span></div><div class="line">  date: 2016-03-21 22:58:49 <span class="comment">#时间戳,一般不改</span></div><div class="line">  tags: Test <span class="comment">#分类标签 --- #下面是正文,可以使用Markdown语法进行书写</span></div></pre></td></tr></table></figure>
-<ul>
-<li>3.然后执行hexo g和hexo d命令,即可在github上查看效果</li>
-</ul>
-<blockquote>
-<p>小贴士:当然,你也可以执行hexo g和hexo s命令在本地打开localhost:4000进行本地访问,然后在同步到GitHub上.</p>
-</blockquote>
-
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">deploy: </div><div class="line"></div><div class="line"><span class="built_in">type</span>: git </div><div class="line"></div><div class="line">repository: https://github.com/suericze/suericze.github.io.git </div><div class="line"></div><div class="line">branch: master</div></pre></td></tr></table></figure></p>
+            <p class="article-more-link">
+                <a href="/2016/08/23/GitHub-Hexo配置系列教程-Hexo-GitHub关联-三/#more">查看更多</a>
+            </p>
         
         </div>
         <footer class="article-footer">
@@ -301,7 +264,7 @@
 
 </div>
 
-    <a data-url="http://bentoule.github.io/2016/08/23/GitHub-Hexo配置系列教程-Hexo-GitHub关联-三/" data-id="cis78ti3h00022kd0yz1mgd2t" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+    <a data-url="http://bentoule.github.io/2016/08/23/GitHub-Hexo配置系列教程-Hexo-GitHub关联-三/" data-id="cis78wogg0006x0d00xt7hnpj" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -438,7 +401,7 @@
 
 </div>
 
-    <a data-url="http://bentoule.github.io/2016/08/23/GitHub-Hexo配置系列教程-GitHub配置-二/" data-id="cis78ti3y00082kd0wqcoetw4" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+    <a data-url="http://bentoule.github.io/2016/08/23/GitHub-Hexo配置系列教程-GitHub配置-二/" data-id="cis78wog20002x0d01h3j21lr" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -581,7 +544,7 @@
 
 </div>
 
-    <a data-url="http://bentoule.github.io/2016/08/21/GitHub-Hexo-配置系列教程-HEXO配置-（一）/" data-id="cis78ti3a00002kd0ftatecz0" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+    <a data-url="http://bentoule.github.io/2016/08/21/GitHub-Hexo-配置系列教程-HEXO配置-（一）/" data-id="cis78wofu0000x0d053lra2a7" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -704,7 +667,7 @@
 
 </div>
 
-    <a data-url="http://bentoule.github.io/2016/08/20/hello-world/" data-id="cis78ti3v00062kd0o9exnh4n" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+    <a data-url="http://bentoule.github.io/2016/08/20/hello-world/" data-id="cis78wogj0008x0d0nzg9zy3m" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
 <script>
     (function ($) {
         // Prevent duplicate binding

@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://bentoule.github.io/"/>
-  <updated>2016-08-23T09:02:03.412Z</updated>
+  <updated>2016-08-23T09:07:25.955Z</updated>
   <id>http://bentoule.github.io/</id>
   
   <author>
@@ -20,13 +20,14 @@
     <link href="http://bentoule.github.io/2016/08/23/GitHub-Hexo%E9%85%8D%E7%BD%AE%E7%B3%BB%E5%88%97%E6%95%99%E7%A8%8B-Hexo-GitHub%E5%85%B3%E8%81%94-%E4%B8%89/"/>
     <id>http://bentoule.github.io/2016/08/23/GitHub-Hexo配置系列教程-Hexo-GitHub关联-三/</id>
     <published>2016-08-23T08:43:57.000Z</published>
-    <updated>2016-08-23T09:02:03.412Z</updated>
+    <updated>2016-08-23T09:07:25.955Z</updated>
     
     <content type="html"><![CDATA[<p>上一篇中我们介绍了如何配置GitHub端的具体操作,接下来,就是将Hexo与GitHub进行关联</p>
 <h1 id="在Hexo配置文件中关联GitHub账号"><a href="#在Hexo配置文件中关联GitHub账号" class="headerlink" title="在Hexo配置文件中关联GitHub账号"></a>在Hexo配置文件中关联GitHub账号</h1><ul>
 <li>1.找到刚才所建的目录(F:\Hexo下),编辑 _config.yml,拖到最下方,找到deploy标签,然后更为如下配置,注意:你自己在修改时,需要将 suericze修改为自己的用户名 </li>
 </ul>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">deploy: </div><div class="line"></div><div class="line"><span class="built_in">type</span>: git </div><div class="line"></div><div class="line">repository: https://github.com/suericze/suericze.github.io.git </div><div class="line"></div><div class="line">branch: master</div></pre></td></tr></table></figure>
+<a id="more"></a>
 <ul>
 <li>2.注意: 因yml格式问题,所有键值对的”:”冒号后面必须跟有一个空格</li>
 <li>3.注意: 自Hexo 3.0以后,type类型都为 git,而非 github</li>
@@ -58,7 +59,15 @@
 <p>既然博客已经搭建完毕,现在肯定想跃跃欲试,发布一篇博客,所以我们需要更改一些默认设置,来将站点打造成真正属于自己的网站.</p>
 <p>博客配置一般需要用到两个文件,一个是对全局进行配置的<strong>_config.yml</strong>文件,另一个是对主题进行配置的文件(暂时还没有设置,找到后后续补充)</p>
 <p>F:\Hexo_config.yml</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># Hexo Configuration #</span></div><div class="line"><span class="comment"># Docs: https://hexo.io/docs/configuration.html #</span></div><div class="line"><span class="comment"># Source: https://github.com/hexojs/hexo/</span></div><div class="line"><span class="comment"># Site </span></div><div class="line">   title: Test <span class="comment">#网站名称 </span></div><div class="line">   subtitle: Test <span class="comment">#副标题,在titile下方可看到 </span></div><div class="line">   description: des <span class="comment">#描述,可自定义 </span></div><div class="line">   author: au <span class="comment">#作者,可以在左下角看到 </span></div><div class="line">   language: zh-CN <span class="comment">#中文 </span></div><div class="line">   timezone: PRC <span class="comment">#时区 People's Republic of China，中华人民共和国</span></div><div class="line"></div><div class="line">``` </div><div class="line"></div><div class="line">**现在可以执行hexo g和hexo d命令来查看更改的效果了.**</div><div class="line"></div><div class="line">发布文章</div><div class="line"></div><div class="line">- 1.在F:\Hexo下打开Git Bash命令,执行hexo n <span class="string">"This my first blog"</span></div><div class="line">- 2.创建成功后,就可以在F:\Hexo\source_posts中看到该md文件,在这里,可以使用MarkdownPad 2 或者 记事本 打开,然后进行自定义更改</div><div class="line"></div><div class="line">![](/img/2016/08/23/11.png)</div><div class="line"></div><div class="line">``` bash</div><div class="line"> </div><div class="line">  title: This my first blog <span class="comment">#这里是正文,可以更改</span></div><div class="line">  date: 2016-03-21 22:58:49 <span class="comment">#时间戳,一般不改</span></div><div class="line">  tags: Test <span class="comment">#分类标签 --- #下面是正文,可以使用Markdown语法进行书写</span></div></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># Hexo Configuration #</span></div><div class="line"><span class="comment"># Docs: https://hexo.io/docs/configuration.html #</span></div><div class="line"><span class="comment"># Source: https://github.com/hexojs/hexo/</span></div><div class="line"><span class="comment"># Site </span></div><div class="line">   title: Test <span class="comment">#网站名称 </span></div><div class="line">   subtitle: Test <span class="comment">#副标题,在titile下方可看到 </span></div><div class="line">   description: des <span class="comment">#描述,可自定义 </span></div><div class="line">   author: au <span class="comment">#作者,可以在左下角看到 </span></div><div class="line">   language: zh-CN <span class="comment">#中文 </span></div><div class="line">   timezone: PRC <span class="comment">#时区 People's Republic of China，中华人民共和国</span></div></pre></td></tr></table></figure>
+<p><strong>现在可以执行hexo g和hexo d命令来查看更改的效果了.</strong></p>
+<p>发布文章</p>
+<ul>
+<li>1.在F:\Hexo下打开Git Bash命令,执行hexo n “This my first blog”</li>
+<li>2.创建成功后,就可以在F:\Hexo\source_posts中看到该md文件,在这里,可以使用MarkdownPad 2 或者 记事本 打开,然后进行自定义更改</li>
+</ul>
+<p><img src="/img/2016/08/23/11.png" alt=""></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"> </div><div class="line">title: This my first blog <span class="comment">#这里是正文,可以更改</span></div><div class="line">date: 2016-03-21 22:58:49 <span class="comment">#时间戳,一般不改</span></div><div class="line">tags: Test <span class="comment">#分类标签 --- #下面是正文,可以使用Markdown语法进行书写</span></div></pre></td></tr></table></figure>
 <ul>
 <li>3.然后执行hexo g和hexo d命令,即可在github上查看效果</li>
 </ul>
@@ -70,7 +79,10 @@
     <summary type="html">
     
       &lt;p&gt;上一篇中我们介绍了如何配置GitHub端的具体操作,接下来,就是将Hexo与GitHub进行关联&lt;/p&gt;
-&lt;h1 id=&quot;在Hexo配置文件中关联GitHub账号&quot;&gt;&lt;a href=&quot;#在Hexo配置文件中关联GitHub账号&quot; class=&quot;headerlink&quot; tit
+&lt;h1 id=&quot;在Hexo配置文件中关联GitHub账号&quot;&gt;&lt;a href=&quot;#在Hexo配置文件中关联GitHub账号&quot; class=&quot;headerlink&quot; title=&quot;在Hexo配置文件中关联GitHub账号&quot;&gt;&lt;/a&gt;在Hexo配置文件中关联GitHub账号&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;1.找到刚才所建的目录(F:\Hexo下),编辑 _config.yml,拖到最下方,找到deploy标签,然后更为如下配置,注意:你自己在修改时,需要将 suericze修改为自己的用户名 &lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;4&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;5&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;6&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;7&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;deploy: &lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;built_in&quot;&gt;type&lt;/span&gt;: git &lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;repository: https://github.com/suericze/suericze.github.io.git &lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;branch: master&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
     
     </summary>
     
