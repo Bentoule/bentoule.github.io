@@ -20,7 +20,7 @@ GitHub端操作注册GitHub
 创建Repository
 在自己GitHub主页点击右上角,创建Repository">
 <meta property="og:image" content="http://bentoule.github.io/img/2016/08/21/HEXO.png">
-<meta property="og:updated_time" content="2016-08-23T03:48:19.099Z">
+<meta property="og:updated_time" content="2016-08-23T08:33:33.716Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="GitHub+Hexo配置系列教程-GitHub配置(二)">
 <meta name="twitter:description" content="上一篇中我们介绍了如何搭建Hexo本地博客,现在我们开始配置GitHub并进行关联Hexo
@@ -331,8 +331,48 @@ GitHub端操作注册GitHub
 <blockquote>
 <p>小贴士:如果clip命令没有执行，你可以找到隐藏的.ssh文件夹中，打开你喜欢的文本编辑器文件，并将其复制到剪贴板,一般是在C:\Users\yourname.ssh文件夹下的id_rsa.pub文件中,使用文本文档打开后复制内容即可</p>
 </blockquote>
-<p><strong>2.在GitHub任何界面中,点击右上角个人资料照片,选择Settings </strong></p>
-<p>未完待续…..</p>
+<p><strong>在GitHub任何界面中,点击右上角个人资料照片,选择Settings </strong><br><img src="/img/2016/08/23/8.png" alt=""></p>
+<p><strong>在用户设置栏中，点击SSH AND GPG keys</strong><br><img src="/img/2016/08/23/9.png" alt=""></p>
+<ul>
+<li>然后点击 New SSH key</li>
+<li>在“Title”字段中，为新的密钥添加描述性标签。例如，如果您使用的是个人的Mac ，您可以调用这个关键的“个人的MacBook Air ” 。</li>
+<li>粘贴刚才复制的秘钥值到“key”框中。 </li>
+</ul>
+<p><img src="/img/2016/08/23/9.png" alt=""></p>
+<ul>
+<li>然后点击Add SSH key</li>
+<li>确认操作,然后输入你的GitHub密码。</li>
+</ul>
+<p><strong>测试SSH秘钥是否添加成功</strong></p>
+<blockquote>
+<p>小贴士:当你测试你的连接，你需要使用你的密码，这是你先前创建的SSH密钥密码来验证这个动作。有关使用SSH密钥口令的详细信息，请参阅”使用SSH密钥口令”一节。</p>
+</blockquote>
+<ul>
+<li>在任意位置右键,打开Git Bash</li>
+<li>输入以下命令ssh -T git@github.com</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ ssh -T git@github.com</div><div class="line"><span class="comment"># Attempts to ssh to GitHub</span></div></pre></td></tr></table></figure>
+<p><strong>你可能会看到这些警告之一：</strong></p>
+<ul>
+<li><p>The authenticity of host ‘github.com (192.30.252.1)’ can’t be established.RSA key fingerprint is 16:27:ac:a5:76:28:2d:36:63:1b:56:4d:eb:df:a6:48. Are you sure you want to continue connecting (yes/no)?</p>
+</li>
+<li><p>The authenticity of host ‘github.com (192.30.252.1)’ can’t be established.RSA key fingerprint is nThbg6kXUpJWGl7E1IGOCspRomTxdCARLviKw6E5SY8.Are you sure you want to continue connecting (yes/no)?</p>
+</li>
+</ul>
+<blockquote>
+<p>小贴士:上面的例子列出了GitHub的IP地址为192.30.252.1 。当侦测GitHub上，你可能会看到一个IP地址范围。有关更多信息，请参阅“<a href="https://help.github.com/articles/what-ip-addresses-does-github-use-that-i-should-whitelist/" target="_blank" rel="external">不GitHub上使用什么IP地址，我应该列入白名单？</a> ” </p>
+</blockquote>
+<p>验证你看到消息中的指纹相匹配的以下信息，然后输入 <strong>yes</strong></p>
+<ul>
+<li>Hi username! You’ve successfully authenticated, but GitHub does notprovide shell access.</li>
+</ul>
+<blockquote>
+<p>小贴士:验证结果消息中包含的用户名。如果你看到一个包含“access denied “的错误,请参阅：”<a href="https://help.github.com/articles/error-permission-denied-publickey/" target="_blank" rel="external">权限被拒绝文档</a>”</p>
+</blockquote>
+<ul>
+<li>如果你从HTTPS切换到SSH，你需要更新远程存储库的URL。</li>
+</ul>
+<p><em>ok,如果以上都完成了,那我们GitHub端的工作已经完成,接下来,就是Hexo+GitHub的关联配置</em></p>
 
         
         </div>
@@ -343,7 +383,7 @@ GitHub端操作注册GitHub
 
 </div>
 
-    <a data-url="http://bentoule.github.io/2016/08/23/GitHub-Hexo配置系列教程-GitHub配置-二/" data-id="cis6zk6b0000098d0usci8b6b" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+    <a data-url="http://bentoule.github.io/2016/08/23/GitHub-Hexo配置系列教程-GitHub配置-二/" data-id="cis77sxog0006bwd06wleply1" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
