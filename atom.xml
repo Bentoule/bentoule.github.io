@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://bendan.vip/"/>
-  <updated>2016-08-24T06:48:40.349Z</updated>
+  <updated>2016-08-24T07:19:41.914Z</updated>
   <id>http://bendan.vip/</id>
   
   <author>
@@ -20,21 +20,33 @@
     <link href="http://bendan.vip/2016/08/24/Markdown%E8%AF%AD%E6%B3%95%E4%BB%8B%E7%BB%8D/"/>
     <id>http://bendan.vip/2016/08/24/Markdown语法介绍/</id>
     <published>2016-08-24T06:06:29.000Z</published>
-    <updated>2016-08-24T06:48:40.349Z</updated>
+    <updated>2016-08-24T07:19:41.914Z</updated>
     
     <content type="html"><![CDATA[<h2 id="什么是Markdown语法？"><a href="#什么是Markdown语法？" class="headerlink" title="什么是Markdown语法？"></a>什么是Markdown语法？</h2><p>Markdown 是一种轻量级标记语言，目标是实现「易读易写」，通过简单的标记语法，它可以使普通文本内容具有一定的格式。</p>
 <a id="more"></a>
 <p><img src="/img/2016/08/24/1.png" alt=""></p>
 <h2 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h2><p>在Markdown中，你只需要在文本前面加上# 即可，同理、你还可以增加二级标题、三级标题、四级标题、五级标题和六级标题，总共六级，只需要增加# 即可，标题字号相应降低。例如：</p>
 <figure class="highlight ruby"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># 一级标题</span></div><div class="line"><span class="comment">## 二级标题</span></div><div class="line"><span class="comment">### 三级标题</span></div><div class="line"><span class="comment">#### 四级标题</span></div><div class="line"><span class="comment">##### 五级标题</span></div><div class="line"><span class="comment">###### 六级标题</span></div></pre></td></tr></table></figure>
-<p><strong>点击预览可以看到效果：</strong></p>
+<p>效果图如下：</p>
 <p><img src="/img/2016/08/24/2.png" alt=""></p>
 <h2 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h2><p>Markdown 标记区块引用是使用类似 email 中用 &gt; 的引用方式，只需要在整个段落的第一行最前面加上 &gt; ：</p>
 <figure class="highlight ruby"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&gt; 时光静好，与君语；细水流年，与君同。-- BenDan</div></pre></td></tr></table></figure>
-<p><strong>效果图如下：</strong><br><img src="/img/2016/08/24/3.png" alt=""></p>
+<p>效果图如下：<br><img src="/img/2016/08/24/3.png" alt=""></p>
 <p>区块引用可以嵌套，只要根据层次加上不同数量的 &gt; ：</p>
 <figure class="highlight ruby"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">&gt; 这是第一级引用。</div><div class="line">&gt;</div><div class="line">&gt; &gt; 这是第二级引用。</div><div class="line">&gt;</div><div class="line">&gt; 现在回到第一级引用。</div></pre></td></tr></table></figure>
-<p><strong>效果图如下：</strong><br><img src="/img/2016/08/24/4.png" alt=""></p>
+<p>效果图如下：<br><img src="/img/2016/08/24/4.png" alt=""></p>
+<p>引用的区块内也可以使用其他的 Markdown 语法，包括标题、列表、代码区块等：</p>
+<figure class="highlight ruby"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">&gt; <span class="comment">## 这是一个标题。</span></div><div class="line">&gt;</div><div class="line">&gt; <span class="number">1</span>. 这是第一行列表项。</div><div class="line">&gt; <span class="number">2</span>. 这是第二行列表项。</div><div class="line">&gt;</div><div class="line">&gt; 给出一些例子代码：</div><div class="line">&gt;</div><div class="line">&gt; <span class="keyword">return</span> shell_exec(<span class="string">"echo $input | $markdown_script"</span>);</div></pre></td></tr></table></figure>
+<p>效果图如下：<br><img src="/img/2016/08/24/5.png" alt=""></p>
+<h2 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h2><p>列表项目标记通常放在最左边，项目标记后面要接一个字符的空格。</p>
+<p><strong>无序列表：</strong>使用星号、加号或是减号作为列表标记</p>
+<figure class="highlight ruby"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">- Red</div><div class="line">- Green</div><div class="line">- Blue</div></pre></td></tr></table></figure>
+<p>效果图如下：<br><img src="/img/2016/08/24/6.png" alt=""></p>
+<p><strong>有序列表：</strong>使用数字接着一个英文句点</p>
+<figure class="highlight ruby"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="number">1</span>. Red</div><div class="line"><span class="number">2</span>. Green</div><div class="line"><span class="number">3</span>. Blue</div></pre></td></tr></table></figure>
+<p>效果图如下：<br><img src="/img/2016/08/24/7.png" alt=""></p>
+<h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><p>只要把你的代码块包裹在 <figure class="highlight plain"><figcaption><span>在围栏式代码块中，你可以指定一个可选的语言标识符，然后我们就可以为它启用语法着色了。 举个例子，这样可以为一段 Ruby 代码着色：</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">```ruby</div><div class="line"></div><div class="line">```ruby</div><div class="line">require &apos;redcarpet&apos;</div><div class="line">markdown = Redcarpet.new(&quot;Hello World!&quot;)</div><div class="line">puts markdown.to_html</div></pre></td></tr></table></figure></p>
+<p>```<br>效果图如下：</p>
 ]]></content>
     
     <summary type="html">
