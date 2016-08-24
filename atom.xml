@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://bendan.vip/"/>
-  <updated>2016-08-24T07:42:33.040Z</updated>
+  <updated>2016-08-24T08:03:05.976Z</updated>
   <id>http://bendan.vip/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://bendan.vip/2016/08/24/Markdown%E8%AF%AD%E6%B3%95%E4%BB%8B%E7%BB%8D/"/>
     <id>http://bendan.vip/2016/08/24/Markdown语法介绍/</id>
     <published>2016-08-24T06:06:29.000Z</published>
-    <updated>2016-08-24T07:42:33.040Z</updated>
+    <updated>2016-08-24T08:03:05.976Z</updated>
     
     <content type="html"><![CDATA[<h2 id="什么是Markdown语法？"><a href="#什么是Markdown语法？" class="headerlink" title="什么是Markdown语法？"></a>什么是Markdown语法？</h2><p>Markdown 是一种轻量级标记语言，目标是实现「易读易写」，通过简单的标记语法，它可以使普通文本内容具有一定的格式。</p>
 <a id="more"></a>
@@ -47,7 +47,51 @@
 <p>效果图如下：<br><img src="/img/2016/08/24/7.png" alt=""></p>
 <h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><p>只要把你的代码块包裹在之间，你就不需要通过无休止的缩进来标记代码块了。 在围栏式代码块中，你可以指定一个可选的语言标识符，然后我们就可以为它启用语法着色了。 举个例子，这样可以为一段 Ruby 代码着色：</p>
 <p><img src="/img/2016/08/24/8.png" alt=""><br>效果图如下：</p>
-<figure class="highlight ruby"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">require</span> <span class="string">'redcarpet'</span></div><div class="line">markdown = Redcarpet.new(<span class="string">"Hello World!"</span>)</div><div class="line">puts markdown.to_html</div></pre></td></tr></table></figure>]]></content>
+<figure class="highlight ruby"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">require</span> <span class="string">'redcarpet'</span></div><div class="line">markdown = Redcarpet.new(<span class="string">"Hello World!"</span>)</div><div class="line">puts markdown.to_html</div></pre></td></tr></table></figure>
+<h2 id="强调"><a href="#强调" class="headerlink" title="强调"></a>强调</h2><p>在Markdown中，可以使用 * 和 _ 来表示斜体和加粗。</p>
+<p>斜体：<br><figure class="highlight ruby"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">*BenDan 遇见你，真美好！*</div><div class="line">_BenDan 遇见你，真美好！<span class="number">_</span></div></pre></td></tr></table></figure></p>
+<p>效果如下</p>
+<p><em>BenDan 遇见你，真美好！</em><br><em>BenDan 遇见你，真美好！</em></p>
+<h2 id="自动链接"><a href="#自动链接" class="headerlink" title="自动链接"></a>自动链接</h2><p>方括号显示说明，圆括号内显示网址， Markdown 会自动把它转成链接，例如：</p>
+<figure class="highlight ruby"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">[BenDan的博客](<span class="symbol">http:</span>/<span class="regexp">/bendan.vip)</span></div></pre></td></tr></table></figure>
+<p>效果如下</p>
+<p><a href="http://bendan.vip">BenDan的博客</a></p>
+<p>或者也可以直接用&lt; &gt;，将网址或者邮箱地址放在中间，也能将地址直接转成链接：</p>
+<figure class="highlight ruby"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">&lt;admin@3gjn.com&gt;</div></pre></td></tr></table></figure>
+<p>效果如下</p>
+<p><a href="&#109;&#x61;&#105;&#x6c;&#116;&#x6f;&#58;&#x61;&#100;&#109;&#105;&#110;&#64;&#51;&#103;&#x6a;&#x6e;&#x2e;&#x63;&#111;&#109;">&#x61;&#100;&#109;&#105;&#110;&#64;&#51;&#103;&#x6a;&#x6e;&#x2e;&#x63;&#111;&#109;</a></p>
+<p>表格</p>
+<p>在 Markdown 中，可以制作表格，例如：</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">&lt;table&gt;</div><div class="line">   &lt;tr&gt;</div><div class="line">        &lt;td&gt;First Header&lt;/td&gt;</div><div class="line">        &lt;td&gt;Second Header&lt;/td&gt;</div><div class="line">        &lt;td&gt;Second Header&lt;/td&gt;</div><div class="line">   &lt;/tr&gt;</div><div class="line"></div><div class="line">  &lt;tr&gt;</div><div class="line">        &lt;td&gt;Content Cell&lt;/td&gt; </div><div class="line">        &lt;td&gt;Content Cell&lt;/td&gt; </div><div class="line">        &lt;td&gt;Content Cell&lt;/td&gt;</div><div class="line">  &lt;/tr&gt;</div><div class="line"></div><div class="line">&lt;/table&gt;</div></pre></td></tr></table></figure>
+<table><br>   <tr><br>       <td>First Header</td><td>Second Header</td><td>Second Header</td><br>   </tr><br><br>  <tr><br>      <td>Content Cell</td> <td>Content Cell</td> <td>Content Cell</td><br>  </tr><br><br></table>
+
+<table>
+<thead>
+<tr>
+<th>Tables</th>
+<th style="text-align:center">Are</th>
+<th style="text-align:right">Cool</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>col 3 is</td>
+<td style="text-align:center">right-aligned</td>
+<td style="text-align:right">$1600</td>
+</tr>
+<tr>
+<td>col 2 is</td>
+<td style="text-align:center">centered</td>
+<td style="text-align:right">$12</td>
+</tr>
+<tr>
+<td>zebra stripes</td>
+<td style="text-align:center">are neat</td>
+<td style="text-align:right">$1</td>
+</tr>
+</tbody>
+</table>
+]]></content>
     
     <summary type="html">
     
@@ -377,11 +421,11 @@
     
       <category term="HEXO配置" scheme="http://bendan.vip/tags/HEXO%E9%85%8D%E7%BD%AE/"/>
     
-      <category term="Github" scheme="http://bendan.vip/tags/Github/"/>
-    
       <category term="node.js" scheme="http://bendan.vip/tags/node-js/"/>
     
       <category term="GIT" scheme="http://bendan.vip/tags/GIT/"/>
+    
+      <category term="Github" scheme="http://bendan.vip/tags/Github/"/>
     
   </entry>
   
