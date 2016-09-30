@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang=zh>
+<head>
+    <meta charset="utf-8">
+    
+    <title>T-SQL经典语句 | BenDan</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="一、基础1、说明：创建数据库1CREATE DATABASE database-name
+2、说明：删除数据库1drop database dbname
+3、说明：备份sql server创建 备份数据的 device1234USE masterEXEC sp_addumpdevice &amp;apos;disk&amp;apos;, &amp;apos;testBack&amp;apos;, &amp;apos;c:\mssql7b">
+<meta property="og:type" content="article">
+<meta property="og:title" content="T-SQL经典语句">
+<meta property="og:url" content="http://bendan.vip/2016/09/22/T-SQL经典语句/index.html">
+<meta property="og:site_name" content="BenDan">
+<meta property="og:description" content="一、基础1、说明：创建数据库1CREATE DATABASE database-name
+2、说明：删除数据库1drop database dbname
+3、说明：备份sql server创建 备份数据的 device1234USE masterEXEC sp_addumpdevice &amp;apos;disk&amp;apos;, &amp;apos;testBack&amp;apos;, &amp;apos;c:\mssql7b">
+<meta property="og:image" content="http://bendan.vip/img/2016/09/04/1.jpg">
+<meta property="og:updated_time" content="2016-09-22T06:15:35.034Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="T-SQL经典语句">
+<meta name="twitter:description" content="一、基础1、说明：创建数据库1CREATE DATABASE database-name
+2、说明：删除数据库1drop database dbname
+3、说明：备份sql server创建 备份数据的 device1234USE masterEXEC sp_addumpdevice &amp;apos;disk&amp;apos;, &amp;apos;testBack&amp;apos;, &amp;apos;c:\mssql7b">
+<meta name="twitter:image" content="http://bendan.vip/img/2016/09/04/1.jpg">
+    
+
+    
+        <link rel="alternate" href="/atom.xml" title="BenDan" type="application/atom+xml" />
+    
+
+    
+        <link rel="icon" href="/css/images/favicon.ico" />
+    
+
+    <link rel="stylesheet" href="/vendor/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/vendor/open-sans/styles.css">
+    <link rel="stylesheet" href="/vendor/source-code-pro/styles.css">
+
+    <link rel="stylesheet" href="/css/style.css">
+
+    <script src="/vendor/jquery/2.1.3/jquery.min.js"></script>
+    
+    
+        <link rel="stylesheet" href="/vendor/lightgallery/css/lightgallery.min.css">
+    
+    
+    
+    
+
+</head>
+
+<body>
+    <div id="container">
+        <header id="header">
+    <div id="header-main" class="header-inner">
+        <div class="outer">
+            <a href="/" id="logo">
+                <i class="logo"></i>
+                <span class="site-title">BenDan</span>
+            </a>
+            <nav id="main-nav">
+                
+                    <a class="main-nav-link" href="/.">首页</a>
+                
+                    <a class="main-nav-link" href="/archives">归档</a>
+                
+                    <a class="main-nav-link" href="/categories">分类</a>
+                
+                    <a class="main-nav-link" href="/tags">标签</a>
+                
+                    <a class="main-nav-link" href="/about">关于</a>
+                
+                    <a class="main-nav-link" href="/links">邻居</a>
+                
+            </nav>
+            
+                
+                <nav id="sub-nav">
+                    <div class="profile" id="profile-nav">
+                        <a id="profile-anchor" href="javascript:;">
+                            <img class="avatar" src="/css/images/avatar.png" />
+                            <i class="fa fa-caret-down"></i>
+                        </a>
+                    </div>
+                </nav>
+            
+            <div id="search-form-wrap">
+
+    <form class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder="搜索" />
+        <button type="submit" class="search-form-submit"></button>
+    </form>
+    <div class="ins-search">
+    <div class="ins-search-mask"></div>
+    <div class="ins-search-container">
+        <div class="ins-input-wrapper">
+            <input type="text" class="ins-search-input" placeholder="想要查找什么..." />
+            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: '文章',
+            PAGES: '页面',
+            CATEGORIES: '分类',
+            TAGS: '标签',
+            UNTITLED: '(未命名)',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+<script src="/js/insight.js"></script>
+
+</div>
+        </div>
+    </div>
+    <div id="main-nav-mobile" class="header-sub header-inner">
+        <table class="menu outer">
+            <tr>
+                
+                    <td><a class="main-nav-link" href="/.">首页</a></td>
+                
+                    <td><a class="main-nav-link" href="/archives">归档</a></td>
+                
+                    <td><a class="main-nav-link" href="/categories">分类</a></td>
+                
+                    <td><a class="main-nav-link" href="/tags">标签</a></td>
+                
+                    <td><a class="main-nav-link" href="/about">关于</a></td>
+                
+                    <td><a class="main-nav-link" href="/links">邻居</a></td>
+                
+                <td>
+                    
+    <div class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder="搜索" />
+    </div>
+
+                </td>
+            </tr>
+        </table>
+    </div>
+</header>
+
+        <div class="outer">
+            
+                
+
+<aside id="profile">
+    <div class="inner profile-inner">
+        <div class="base-info profile-block">
+            <img id="avatar" src="/css/images/avatar.png" />
+            <h2 id="name">BenDan</h2>
+            <h3 id="title">Web Developer &amp; Designer</h3>
+            <span id="location"><i class="fa fa-map-marker"></i>HuBei, China</span>
+            <a id="follow" target="_blank" href="https://github.com/bentoule/">关注我</a>
+        </div>
+        <div class="article-info profile-block">
+            <div class="article-info-block">
+                9
+                <span>文章</span>
+            </div>
+            <div class="article-info-block">
+                14
+                <span>标签</span>
+            </div>
+        </div>
+        
+        <div class="profile-block social-links">
+            <table>
+                <tr>
+                    
+                    
+                    <td>
+                        <a href="https://github.com/bentoule/" target="_blank" title="github" class=tooltip>
+                            <i class="fa fa-github"></i>
+                        </a>
+                    </td>
+                    
+                    <td>
+                        <a href="http://weibo.com/bentoule/" target="_blank" title="weibo" class=tooltip>
+                            <i class="fa fa-weibo"></i>
+                        </a>
+                    </td>
+                    
+                    <td>
+                        <a href="/book" target="_blank" title="book" class=tooltip>
+                            <i class="fa fa-book"></i>
+                        </a>
+                    </td>
+                    
+                    <td>
+                        <a href="/movie" target="_blank" title="play-circle" class=tooltip>
+                            <i class="fa fa-play-circle"></i>
+                        </a>
+                    </td>
+                    
+                    <td>
+                        <a href="/atom.xml" target="_blank" title="rss" class=tooltip>
+                            <i class="fa fa-rss"></i>
+                        </a>
+                    </td>
+                    
+                </tr>
+            </table>
+        </div>
+        
+    </div>
+</aside>
+
+            
+            <section id="main"><article id="post-T-SQL经典语句" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+        
+            <header class="article-header">
+                
+    
+        <h1 class="article-title" itemprop="name">
+            T-SQL经典语句
+        </h1>
+    
+
+                
+                    <div class="article-meta">
+                        
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>
+        <a href="/2016/09/22/T-SQL经典语句/">
+            <time datetime="2016-09-22T05:46:34.000Z" itemprop="datePublished">2016-09-22</time>
+        </a>
+    </div>
+
+
+                        
+    <div class="article-category">
+    	<i class="fa fa-folder"></i>
+        <a class="article-category-link" href="/categories/SQL-SERVER/">SQL SERVER</a>
+    </div>
+
+                        
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link" href="/tags/T-SQL/">T-SQL</a>, <a class="tag-link" href="/tags/数据库/">数据库</a>
+    </div>
+
+                    </div>
+                
+            </header>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+            
+            <h2 id="一、基础"><a href="#一、基础" class="headerlink" title="一、基础"></a>一、基础</h2><p><strong>1、说明：创建数据库</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">CREATE DATABASE database-name</div></pre></td></tr></table></figure></p>
+<p><strong>2、说明：删除数据库</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">drop database dbname</div></pre></td></tr></table></figure></p>
+<p><strong>3、说明：备份sql server</strong><br>创建 备份数据的 device<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">USE master</div><div class="line">EXEC sp_addumpdevice &apos;disk&apos;, &apos;testBack&apos;, &apos;c:\mssql7backup\MyNwind_1.dat&apos;</div><div class="line">/*开始 备份*/</div><div class="line">BACKUP DATABASE pubs TO testBack</div></pre></td></tr></table></figure></p>
+<a id="more"></a>
+<p><strong>4、说明：创建新表</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">create table tabname(col1 type1 [not null] [primary key],col2 type2 [not null],..)</div><div class="line">根据已有的表创建新表： </div><div class="line">A：create table tab_new like tab_old (使用旧表创建新表)</div><div class="line">B：create table tab_new as select col1,col2… from tab_old definition only</div></pre></td></tr></table></figure>
+<p><strong>5、说明：删除新表</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">drop table tabname</div></pre></td></tr></table></figure>
+<p><strong>6、说明：增加一个列</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Alter table tabname add column col type</div></pre></td></tr></table></figure>
+<blockquote>
+<p>注：列增加后将不能删除。DB2中列加上后数据类型也不能改变，唯一能改变的是增加varchar类型的长度。</p>
+</blockquote>
+<p><strong>7、说明：添加主键：</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Alter table tabname add primary key(col)</div></pre></td></tr></table></figure>
+<p><strong>说明：删除主键：</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Alter table tabname drop primary key(col)</div></pre></td></tr></table></figure></p>
+<p><strong>8、说明：创建索引：</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">create [unique] index idxname on tabname(col….)</div></pre></td></tr></table></figure></p>
+<p><strong>删除索引：</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">drop index idxname</div></pre></td></tr></table></figure></p>
+<blockquote>
+<p>注：索引是不可更改的，想更改必须删除重新建。</p>
+</blockquote>
+<p><strong>9、说明：创建视图：</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">create view viewname as select statement</div></pre></td></tr></table></figure></p>
+<p><strong>删除视图：</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">drop view viewname</div></pre></td></tr></table></figure></p>
+<p><strong>10、说明：几个简单的基本的sql语句</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">选择：select * from table1 where 范围</div><div class="line">插入：insert into table1(field1,field2) values(value1,value2)</div><div class="line">删除：delete from table1 where 范围</div><div class="line">更新：update table1 set field1=value1 where 范围</div><div class="line">查找：select * from table1 where field1 like ’%value1%’ ---like的语法很精妙，查资料!</div><div class="line">排序：select * from table1 order by field1,field2 [desc]</div><div class="line">总数：select count as totalcount from table1</div><div class="line">求和：select sum(field1) as sumvalue from table1</div><div class="line">平均：select avg(field1) as avgvalue from table1</div><div class="line">最大：select max(field1) as maxvalue from table1</div><div class="line">最小：select min(field1) as minvalue from table1</div></pre></td></tr></table></figure></p>
+<p><strong>11、说明：几个高级查询运算词</strong></p>
+<ul>
+<li><p>A： UNION 运算符<br>UNION 运算符通过组合其他两个结果表（例如 TABLE1 和 TABLE2）并消去表中任何重复行而派生出一个结果表。当 ALL 随 UNION 一起使用时（即 UNION ALL），不消除重复行。两种情况下，派生表的每一行不是来自 TABLE1 就是来自 TABLE2。 </p>
+</li>
+<li><p>B： EXCEPT 运算符<br>EXCEPT 运算符通过包括所有在 TABLE1 中但不在 TABLE2 中的行并消除所有重复行而派生出一个结果表。当 ALL 随 EXCEPT 一起使用时 (EXCEPT ALL)，不消除重复行。 </p>
+</li>
+<li><p>C： INTERSECT 运算符<br>INTERSECT 运算符通过只包括 TABLE1 和 TABLE2 中都有的行并消除所有重复行而派生出一个结果表。当 ALL 随 INTERSECT 一起使用时 (INTERSECT ALL)，不消除重复行。<br>注：使用运算词的几个查询结果行必须是一致的。 </p>
+</li>
+</ul>
+<p><strong>12、说明：使用外连接 </strong></p>
+<ul>
+<li><p>A、left outer join：<br>左外连接（左连接）：结果集几包括连接表的匹配行，也包括左连接表的所有行。<br>SQL: select a.a, a.b, a.c, b.c, b.d, b.f from a LEFT OUT JOIN b ON a.a = b.c</p>
+</li>
+<li><p>B：right outer join:<br>右外连接(右连接)：结果集既包括连接表的匹配连接行，也包括右连接表的所有行。</p>
+</li>
+<li><p>C：full outer join：<br>全外连接：不仅包括符号连接表的匹配行，还包括两个连接表中的所有记录。</p>
+</li>
+</ul>
+<h2 id="二、提升"><a href="#二、提升" class="headerlink" title="二、提升"></a>二、提升</h2><p><strong>1、说明：复制表(只复制结构,源表名：a 新表名：b) (Access可用)</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">法一：select * into b from a where 1&lt;&gt;1</div><div class="line">法二：select top 0 * into b from a</div></pre></td></tr></table></figure></p>
+<p><strong>2、说明：拷贝表(拷贝数据,源表名：a 目标表名：b) (Access可用)</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">insert into b(a, b, c) select d,e,f from b;</div></pre></td></tr></table></figure></p>
+<p><strong>3、说明：跨数据库之间表的拷贝(具体数据使用绝对路径) (Access可用)</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">insert into b(a, b, c) select d,e,f from b in ‘具体数据库’ where 条件</div><div class="line">例子：..from b in &apos;&quot;&amp;Server.MapPath(&quot;.&quot;)&amp;&quot;\data.mdb&quot; &amp;&quot;&apos; where..</div></pre></td></tr></table></figure></p>
+<p><strong>4、说明：子查询(表名1：a 表名2：b)</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">select a,b,c from a where a IN (select d from b ) 或者: select a,b,c from a where a IN (1,2,3)</div></pre></td></tr></table></figure></p>
+<p><strong>5、说明：显示文章、提交人和最后回复时间</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">select a.title,a.username,b.adddate from table a,(select max(adddate) adddate from table where table.title=a.title) b</div></pre></td></tr></table></figure></p>
+<p><strong>6、说明：外连接查询(表名1：a 表名2：b)</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">select a.a, a.b, a.c, b.c, b.d, b.f from a LEFT OUT JOIN b ON a.a = b.c</div></pre></td></tr></table></figure></p>
+<p><strong>7、说明：在线视图查询(表名1：a )</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">select * from (SELECT a,b,c FROM a) T where t.a &gt; 1;</div></pre></td></tr></table></figure></p>
+<p><strong>8、说明：between的用法,between限制查询数据范围时包括了边界值,not between不包括</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">select * from table1 where time between time1 and time2</div><div class="line">select a,b,c, from table1 where a not between 数值1 and 数值2</div></pre></td></tr></table></figure></p>
+<p><strong>9、说明：in 的使用方法</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">select * from table1 where a [not] in (‘值1’,’值2’,’值4’,’值6’)</div></pre></td></tr></table></figure></p>
+<p><strong>10、说明：两张关联表，删除主表中已经在副表中没有的信息 </strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">delete from table1 where not exists ( select * from table2 where table1.field1=table2.field1 )</div></pre></td></tr></table></figure></p>
+<p><strong>11、说明：四表联查问题：</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">select * from a left inner join b on a.a=b.b right inner join c on a.a=c.c inner join d on a.a=d.d where .....</div></pre></td></tr></table></figure></p>
+<p><strong>12、说明：日程安排提前五分钟提醒 </strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">SQL: select * from 日程安排 where datediff(&apos;minute&apos;,f开始时间,getdate())&gt;5</div></pre></td></tr></table></figure></p>
+<p><strong>13、说明：一条sql 语句搞定数据库分页</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">select top 10 b.* from (select top 20 主键字段,排序字段 from 表名 order by 排序字段 desc) a,表名 b where b.主键字段 = a.主键字段 order by a.排序字段</div></pre></td></tr></table></figure></p>
+<p><strong>14、说明：前10条记录</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">select top 10 * form table1 where 范围</div></pre></td></tr></table></figure></p>
+<p><strong>15、说明：选择在每一组b值相同的数据中对应的a最大的记录的所有信息(类似这样的用法可以用于论坛每月排行榜,每月热销产品分析,按科目成绩排名,等等.)</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">select a,b,c from tablename ta where a=(select max(a) from tablename tb where tb.b=ta.b)</div></pre></td></tr></table></figure></p>
+<p><strong>16、说明：包括所有在 TableA 中但不在 TableB和TableC 中的行并消除所有重复行而派生出一个结果表</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">(select a from tableA ) except (select a from tableB) except (select a from tableC)</div></pre></td></tr></table></figure></p>
+<p><strong>17、说明：随机取出10条数据</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">select top 10 * from tablename order by newid()</div></pre></td></tr></table></figure></p>
+<p><strong>18、说明：随机选择记录</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">select newid()</div></pre></td></tr></table></figure></p>
+<p><strong>19、说明：删除重复记录</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Delete from tablename where id not in (select max(id) from tablename group by col1,col2,...)</div></pre></td></tr></table></figure></p>
+<p><strong>20、说明：列出数据库里所有的表名</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">select name from sysobjects where type=&apos;U&apos;</div></pre></td></tr></table></figure></p>
+<p><strong>21、说明：列出表里的所有的</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">select name from syscolumns where id=object_id(&apos;TableName&apos;)</div></pre></td></tr></table></figure></p>
+<p><strong>22、说明：列示type、vender、pcs字段，以type字段排列，case可以方便地实现多重选择，类似select 中的case。</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">select type,sum(case vender when &apos;A&apos; then pcs else 0 end),sum(case vender when &apos;C&apos; then pcs else 0 end),sum(case vender when &apos;B&apos; then pcs else 0 end) FROM tablename group by type</div><div class="line">显示结果：</div><div class="line">type vender pcs</div><div class="line">电脑 A 1</div><div class="line">电脑 A 1</div><div class="line">光盘 B 2</div><div class="line">光盘 A 2</div><div class="line">手机 B 3</div><div class="line">手机 C 3</div></pre></td></tr></table></figure></p>
+<p><strong>23、说明：初始化表table1</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">TRUNCATE TABLE table1</div></pre></td></tr></table></figure></p>
+<p><strong>24、说明：选择从10到15的记录</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">select top 5 * from (select top 15 * from table order by id asc) table_别名 order by id desc</div></pre></td></tr></table></figure></p>
+<h2 id="三、技巧"><a href="#三、技巧" class="headerlink" title="三、技巧"></a>三、技巧</h2><p><strong>1、1=1，1=2的使用，在SQL语句组合时用的较多“where 1=1” 是表示选择全部   “where 1=2”全部不选，</strong><br>如：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">if @strWhere !=&apos;&apos; </div><div class="line">begin</div><div class="line">set @strSQL = &apos;select count(*) as Total from [&apos; + @tblName + &apos;] where &apos; + @strWhere </div><div class="line">end</div><div class="line">else </div><div class="line">begin</div><div class="line">set @strSQL = &apos;select count(*) as Total from [&apos; + @tblName + &apos;]&apos; </div><div class="line">end</div><div class="line">我们可以直接写成</div><div class="line">set @strSQL = &apos;select count(*) as Total from [&apos; + @tblName + &apos;] where 1=1 安定 &apos;+ @strWhere</div></pre></td></tr></table></figure></p>
+<p><strong>2、收缩数据库</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">--重建索引</div><div class="line">DBCC REINDEX</div><div class="line">DBCC INDEXDEFRAG</div><div class="line">--收缩数据和日志</div><div class="line">DBCC SHRINKDB</div><div class="line">DBCC SHRINKFILE</div></pre></td></tr></table></figure></p>
+<p><strong>3、压缩数据库</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">dbcc shrinkdatabase(dbname)</div></pre></td></tr></table></figure></p>
+<p><strong>4、转移数据库给新用户以已存在用户权限</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">exec sp_change_users_login &apos;update_one&apos;,&apos;newname&apos;,&apos;oldname&apos;</div><div class="line">go</div></pre></td></tr></table></figure></p>
+<p><strong>5、检查备份集</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">RESTORE VERIFYONLY from disk=&apos;E:\dvbbs.bak&apos;</div></pre></td></tr></table></figure></p>
+<p><strong>6、修复数据库</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">ALTER DATABASE [dvbbs] SET SINGLE_USER</div><div class="line">GO</div><div class="line">DBCC CHECKDB(&apos;dvbbs&apos;,repair_allow_data_loss) WITH TABLOCK</div><div class="line">GO</div><div class="line">ALTER DATABASE [dvbbs] SET MULTI_USER</div><div class="line">GO</div></pre></td></tr></table></figure></p>
+<p><strong>7、日志清除</strong><br><figure class="highlight plain"><figcaption><span>NOCOUNT ON</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div></pre></td><td class="code"><pre><div class="line">DECLARE @LogicalFileName sysname,</div><div class="line">        @MaxMinutes INT,</div><div class="line">        @NewSize INT</div><div class="line"></div><div class="line">USE     tablename             -- 要操作的数据库名</div><div class="line">SELECT @LogicalFileName = &apos;tablename_log&apos;, -- 日志文件名</div><div class="line">@MaxMinutes = 10,               -- Limit on time allowed to wrap log.</div><div class="line">        @NewSize = 1                  -- 你想设定的日志文件的大小(M)</div><div class="line">-- Setup / initialize</div><div class="line">DECLARE @OriginalSize int</div><div class="line">SELECT @OriginalSize = size </div><div class="line">FROM sysfiles</div><div class="line">WHERE name = @LogicalFileName</div><div class="line">SELECT &apos;Original Size of &apos; + db_name() + &apos; LOG is &apos; + </div><div class="line">        CONVERT(VARCHAR(30),@OriginalSize) + &apos; 8K pages or &apos; + </div><div class="line">        CONVERT(VARCHAR(30),(@OriginalSize*8/1024)) + &apos;MB&apos;</div><div class="line">FROM sysfiles</div><div class="line">WHERE name = @LogicalFileName</div><div class="line">CREATE TABLE DummyTrans</div><div class="line">(DummyColumn char (8000) not null)</div><div class="line"></div><div class="line">DECLARE @Counter   INT,</div><div class="line">        @StartTime DATETIME,</div><div class="line">        @TruncLog VARCHAR(255)</div><div class="line">SELECT @StartTime = GETDATE(),</div><div class="line">        @TruncLog = &apos;BACKUP LOG &apos; + db_name() + &apos; WITH TRUNCATE_ONLY&apos;</div><div class="line">DBCC SHRINKFILE (@LogicalFileName, @NewSize)</div><div class="line">EXEC (@TruncLog)</div><div class="line">-- Wrap the log if necessary.</div><div class="line">WHILE     @MaxMinutes &gt; DATEDIFF (mi, @StartTime, GETDATE()) -- time has not expired</div><div class="line">      AND @OriginalSize = (SELECT size FROM sysfiles WHERE name = @LogicalFileName) </div><div class="line">      AND (@OriginalSize * 8 /1024) &gt; @NewSize </div><div class="line">BEGIN -- Outer loop.</div><div class="line">    SELECT @Counter = 0</div><div class="line">    WHILE ((@Counter &lt; @OriginalSize / 16) AND (@Counter &lt; 50000))</div><div class="line">      BEGIN -- update</div><div class="line">        INSERT DummyTrans VALUES (&apos;Fill Log&apos;) </div><div class="line">        DELETE DummyTrans</div><div class="line">        SELECT @Counter = @Counter + 1</div><div class="line">      END   </div><div class="line">    EXEC (@TruncLog) </div><div class="line">END   </div><div class="line">SELECT &apos;Final Size of &apos; + db_name() + &apos; LOG is &apos; +</div><div class="line">        CONVERT(VARCHAR(30),size) + &apos; 8K pages or &apos; + </div><div class="line">        CONVERT(VARCHAR(30),(size*8/1024)) + &apos;MB&apos;</div><div class="line">FROM sysfiles </div><div class="line">WHERE name = @LogicalFileName</div><div class="line">DROP TABLE DummyTrans</div><div class="line">SET NOCOUNT OFF</div></pre></td></tr></table></figure></p>
+<p><strong>8、说明：更改某个表</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">exec sp_changeobjectowner &apos;tablename&apos;,&apos;dbo&apos;</div></pre></td></tr></table></figure></p>
+<p><strong>9、存储更改全部表</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div></pre></td><td class="code"><pre><div class="line">CREATE PROCEDURE dbo.User_ChangeObjectOwnerBatch</div><div class="line">@OldOwner as NVARCHAR(128),</div><div class="line">@NewOwner as NVARCHAR(128)</div><div class="line">AS</div><div class="line">DECLARE @Name   as NVARCHAR(128)</div><div class="line">DECLARE @Owner as NVARCHAR(128)</div><div class="line">DECLARE @OwnerName as NVARCHAR(128)</div><div class="line">DECLARE curObject CURSOR FOR </div><div class="line">select &apos;Name&apos;   = name,</div><div class="line">&apos;Owner&apos;   = user_name(uid)</div><div class="line">from sysobjects</div><div class="line">where user_name(uid)=@OldOwner</div><div class="line">order by name</div><div class="line">OPEN curObject</div><div class="line">FETCH NEXT FROM curObject INTO @Name, @Owner</div><div class="line">WHILE(@@FETCH_STATUS=0)</div><div class="line">BEGIN     </div><div class="line">if @Owner=@OldOwner </div><div class="line">begin</div><div class="line">set @OwnerName = @OldOwner + &apos;.&apos; + rtrim(@Name)</div><div class="line">exec sp_changeobjectowner @OwnerName, @NewOwner</div><div class="line">end</div><div class="line">-- select @name,@NewOwner,@OldOwner</div><div class="line">FETCH NEXT FROM curObject INTO @Name, @Owner</div><div class="line">END</div><div class="line">close curObject</div><div class="line">deallocate curObject</div><div class="line">GO</div></pre></td></tr></table></figure></p>
+<p><strong>10、SQL SERVER中直接循环写入数据</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">declare @i int</div><div class="line">set @i=1</div><div class="line">while @i&lt;30</div><div class="line">begin</div><div class="line">   insert into test (userid) values(@i)</div><div class="line">   set @i=@i+1</div><div class="line">end</div></pre></td></tr></table></figure></p>
+
+        
+        </div>
+        <footer class="article-footer">
+            <div class="share-container">
+
+
+    <div class="bdsharebuttonbox">
+    <a href="#" class="bds_more" data-cmd="more">分享到：</a>
+    <a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间">QQ空间</a>
+    <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博">新浪微博</a>
+    <a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博">腾讯微博</a>
+    <a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网">人人网</a>
+    <a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信">微信</a>
+</div>
+<script>
+window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"16"},"share":{"bdSize":16}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+</script>
+<style>
+    .bdshare_popup_box {
+        border-radius: 4px;
+        border: #e1e1e1 solid 1px;
+    }
+    .bdshare-button-style0-16 a,
+    .bdshare-button-style0-16 .bds_more {
+        padding-left: 20px;
+        margin: 6px 10px 6px 0;
+    }
+    .bdshare_dialog_list a,
+    .bdshare_popup_list a,
+    .bdshare_popup_bottom a {
+        font-family: 'Microsoft Yahei';
+    }
+    .bdshare_popup_top {
+        display: none;
+    }
+    .bdshare_popup_bottom {
+        height: auto;
+        padding: 5px;
+    }
+</style>
+
+
+</div>
+
+            
+    
+        <a href="http://bendan.vip/2016/09/22/T-SQL经典语句/#comments" class="article-comment-link ds-thread-count" data-thread-key="http://bendan.vip/2016/09/22/T-SQL经典语句/">评论</a>
+    
+
+        </footer>
+    </div>
+    
+        
+<nav id="article-nav">
+    
+        <a href="/2016/09/28/TYPECHO响应式主题-Autumn-1-0-发布/" id="article-nav-newer" class="article-nav-link-wrap">
+            <strong class="article-nav-caption">上一篇</strong>
+            <div class="article-nav-title">
+                
+                    TYPECHO响应式主题 :Autumn 1.0 发布
+                
+            </div>
+        </a>
+    
+    
+        <a href="/2016/09/04/SQL-Server-2016正式版安装配置过程图文详解/" id="article-nav-older" class="article-nav-link-wrap">
+            <strong class="article-nav-caption">下一篇</strong>
+            <div class="article-nav-title">SQL Server 2016正式版安装配置过程图文详解</div>
+        </a>
+    
+</nav>
+
+
+    
+</article>
+
+
+    
+    <section id="comments">
+    
+        
+    <div class="ds-thread" data-thread-key="2016/09/22/T-SQL经典语句/" data-title="T-SQL经典语句" data-url="http://bendan.vip/2016/09/22/T-SQL经典语句/"></div>
+    <style>
+        #ds-thread #ds-reset .ds-textarea-wrapper {
+            background: none;
+        }
+        #ds-reset .ds-avatar img {
+            box-shadow: none;
+        }
+        #ds-reset .ds-gradient-bg {
+            background: #f7f7f7;
+        }
+        #ds-thread #ds-reset li.ds-tab a {
+            border-radius: 3px;
+        }
+        #ds-thread #ds-reset .ds-post-button {
+            color: white;
+            border: none;
+            box-shadow: none;
+            background: #d32;
+            text-shadow: none;
+            font-weight: normal;
+            font-family: 'Microsoft Yahei';
+        }
+        #ds-thread #ds-reset .ds-post-button:hover {
+            color: white;
+            background: #DE594C;
+        }
+        #ds-thread #ds-reset .ds-post-button:active {
+            background: #d32;
+        }
+        #ds-smilies-tooltip ul.ds-smilies-tabs li a.ds-current {
+            color: white;
+            background: #d32;
+            box-shadow: none;
+            text-shadow: none;
+            font-weight: normal;
+        }
+    </style>
+
+    
+    </section>
+
+</section>
+            
+                <aside id="sidebar">
+   
+        
+    <div class="widget-wrap">
+        <h3 class="widget-title">最新文章</h3>
+        <div class="widget">
+            <ul id="recent-post" class="">
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2016/09/28/TYPECHO响应式主题-Autumn-1-0-发布/" class="thumbnail">
+    
+    
+        <span style="background-image:url(/img/2016/09/28/1.png)" alt="TYPECHO响应式主题 :Autumn 1.0 发布" class="thumbnail-image"></span>
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/Typecho/">Typecho</a></p>
+                            <p class="item-title"><a href="/2016/09/28/TYPECHO响应式主题-Autumn-1-0-发布/" class="title">TYPECHO响应式主题 :Autumn 1.0 发布</a></p>
+                            <p class="item-date"><time datetime="2016-09-28T11:37:05.000Z" itemprop="datePublished">2016-09-28</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2016/09/22/T-SQL经典语句/" class="thumbnail">
+    
+    
+        <span style="background-image:url(/img/2016/09/04/1.jpg)" alt="T-SQL经典语句" class="thumbnail-image"></span>
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/SQL-SERVER/">SQL SERVER</a></p>
+                            <p class="item-title"><a href="/2016/09/22/T-SQL经典语句/" class="title">T-SQL经典语句</a></p>
+                            <p class="item-date"><time datetime="2016-09-22T05:46:34.000Z" itemprop="datePublished">2016-09-22</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2016/09/04/SQL-Server-2016正式版安装配置过程图文详解/" class="thumbnail">
+    
+    
+        <span style="background-image:url(/img/2016/09/04/1.jpg)" alt="SQL Server 2016正式版安装配置过程图文详解" class="thumbnail-image"></span>
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/SQL-SERVER/">SQL SERVER</a></p>
+                            <p class="item-title"><a href="/2016/09/04/SQL-Server-2016正式版安装配置过程图文详解/" class="title">SQL Server 2016正式版安装配置过程图文详解</a></p>
+                            <p class="item-date"><time datetime="2016-09-04T02:08:47.000Z" itemprop="datePublished">2016-09-04</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2016/08/29/ASP-NET-MVC-5-入门-基础知识/" class="thumbnail">
+    
+    
+        <span style="background-image:url(/img/2016/08/29/1.jpg)" alt="ASP.NET MVC5 入门教程（一）-概念" class="thumbnail-image"></span>
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/ASP-NET/">ASP.NET</a></p>
+                            <p class="item-title"><a href="/2016/08/29/ASP-NET-MVC-5-入门-基础知识/" class="title">ASP.NET MVC5 入门教程（一）-概念</a></p>
+                            <p class="item-date"><time datetime="2016-08-29T01:23:10.000Z" itemprop="datePublished">2016-08-29</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2016/08/24/Markdown语法介绍/" class="thumbnail">
+    
+    
+        <span style="background-image:url(/img/2016/08/24/MarkDown.png)" alt=" Markdown语法介绍" class="thumbnail-image"></span>
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/HELP/">HELP</a></p>
+                            <p class="item-title"><a href="/2016/08/24/Markdown语法介绍/" class="title"> Markdown语法介绍</a></p>
+                            <p class="item-date"><time datetime="2016-08-24T06:06:29.000Z" itemprop="datePublished">2016-08-24</time></p>
+                        </div>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+
+    
+        
+    <div class="widget-wrap">
+        <h3 class="widget-title">分类</h3>
+        <div class="widget">
+            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/ASP-NET/">ASP.NET</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/HELP/">HELP</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/HEXO/">HEXO</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/SQL-SERVER/">SQL SERVER</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Typecho/">Typecho</a><span class="category-list-count">1</span></li></ul>
+        </div>
+    </div>
+
+    
+        
+    <div class="widget-wrap">
+        <h3 class="widget-title">归档</h3>
+        <div class="widget">
+            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/09/">九月 2016</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/08/">八月 2016</a><span class="archive-list-count">6</span></li></ul>
+        </div>
+    </div>
+
+    
+        
+    <div class="widget-wrap">
+        <h3 class="widget-title">标签</h3>
+        <div class="widget">
+            <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Autumn/">Autumn</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/C/">C#</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/GIT/">GIT</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Github/">Github</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/HEXO/">HEXO</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/HEXO配置/">HEXO配置</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/MVC/">MVC</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Markdown/">Markdown</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/SQL-SERVER/">SQL SERVER</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/T-SQL/">T-SQL</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Typecho/">Typecho</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/node-js/">node.js</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/数据库/">数据库</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/模板/">模板</a><span class="tag-list-count">1</span></li></ul>
+        </div>
+    </div>
+
+    
+        
+    <div class="widget-wrap">
+        <h3 class="widget-title">标签云</h3>
+        <div class="widget tagcloud">
+            <a href="/tags/Autumn/" style="font-size: 10px;">Autumn</a> <a href="/tags/C/" style="font-size: 10px;">C#</a> <a href="/tags/GIT/" style="font-size: 10px;">GIT</a> <a href="/tags/Github/" style="font-size: 16.67px;">Github</a> <a href="/tags/HEXO/" style="font-size: 20px;">HEXO</a> <a href="/tags/HEXO配置/" style="font-size: 16.67px;">HEXO配置</a> <a href="/tags/MVC/" style="font-size: 10px;">MVC</a> <a href="/tags/Markdown/" style="font-size: 10px;">Markdown</a> <a href="/tags/SQL-SERVER/" style="font-size: 10px;">SQL SERVER</a> <a href="/tags/T-SQL/" style="font-size: 10px;">T-SQL</a> <a href="/tags/Typecho/" style="font-size: 10px;">Typecho</a> <a href="/tags/node-js/" style="font-size: 10px;">node.js</a> <a href="/tags/数据库/" style="font-size: 13.33px;">数据库</a> <a href="/tags/模板/" style="font-size: 10px;">模板</a>
+        </div>
+    </div>
+
+    
+    <div id="toTop" class="fa fa-angle-up"></div>
+</aside>
+            
+        </div>
+        <footer id="footer">
+    <div class="outer">
+        <div id="footer-info" class="inner">
+            &copy; 2016 BenDan<br>
+            Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>. Theme by <a href="">BenDan</a>
+        </div>
+    </div>
+</footer>
+        
+    
+    <script type="text/javascript">
+    var duoshuoQuery = {short_name:'bendan'};
+    (function() {
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';ds.async = true;
+    ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0]
+    || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+    </script>
+
+
+
+    
+        <script src="/vendor/lightgallery/js/lightgallery.min.js"></script>
+        <script src="/vendor/lightgallery/js/lg-thumbnail.min.js"></script>
+        <script src="/vendor/lightgallery/js/lg-pager.min.js"></script>
+        <script src="/vendor/lightgallery/js/lg-autoplay.min.js"></script>
+        <script src="/vendor/lightgallery/js/lg-fullscreen.min.js"></script>
+        <script src="/vendor/lightgallery/js/lg-zoom.min.js"></script>
+        <script src="/vendor/lightgallery/js/lg-hash.min.js"></script>
+        <script src="/vendor/lightgallery/js/lg-share.min.js"></script>
+        <script src="/vendor/lightgallery/js/lg-video.min.js"></script>
+    
+
+
+<!-- Custom Scripts -->
+<script src="/js/main.js"></script>
+
+    </div>
+</body>
+</html>

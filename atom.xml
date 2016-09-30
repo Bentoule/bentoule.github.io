@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://bendan.vip/"/>
-  <updated>2016-09-04T02:33:19.537Z</updated>
+  <updated>2016-09-30T01:52:20.713Z</updated>
   <id>http://bendan.vip/</id>
   
   <author>
@@ -14,6 +14,158 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>TYPECHO响应式主题 :Autumn 1.0 发布</title>
+    <link href="http://bendan.vip/2016/09/28/TYPECHO%E5%93%8D%E5%BA%94%E5%BC%8F%E4%B8%BB%E9%A2%98-Autumn-1-0-%E5%8F%91%E5%B8%83/"/>
+    <id>http://bendan.vip/2016/09/28/TYPECHO响应式主题-Autumn-1-0-发布/</id>
+    <published>2016-09-28T11:37:05.000Z</published>
+    <updated>2016-09-30T01:52:20.713Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote>
+<p>这是一款仿自然智Typecho模板，历时2两个星期，终于发布了，模板还有很多地方需要完善，后期我也会一直更新，直到没有人用这套主题为止。</p>
+</blockquote>
+<a id="more"></a>
+<p><img src="/img/2016/09/28/2.png" alt=""></p>
+<h2 id="详情"><a href="#详情" class="headerlink" title="详情"></a>详情</h2><p>预览地址：<a href="http://www.3gjn.com" target="_blank" rel="external">http://www.3gjn.com</a><br>最新下载地址：<a href="http://notend.b0.upaiyun.com/usr/uploads/2016/09/723166698.zip" target="_blank" rel="external">Autumn.zip</a></p>
+<h2 id="关于"><a href="#关于" class="headerlink" title="关于"></a>关于</h2><p>处女作主题命名为Autumn（秋天）</p>
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>下载主题拷贝到 themes 模板目录，进入后台启用模板即可。</p>
+<h2 id="点赞和访问量"><a href="#点赞和访问量" class="headerlink" title="点赞和访问量"></a>点赞和访问量</h2><p>开启文章浏览量和点赞功能需要安装插件</p>
+<ul>
+<li><p>Like</p>
+</li>
+<li><p>Views</p>
+</li>
+</ul>
+<p>插件打包下载：<a href="http://notend.b0.upaiyun.com/usr/uploads/2016/09/878474602.rar" target="_blank" rel="external">plugins.rar</a><br>下载解压上传 plugins 插件目录,启用即可</p>
+<h2 id="顶部页面描述设置"><a href="#顶部页面描述设置" class="headerlink" title="顶部页面描述设置"></a>顶部页面描述设置</h2><p><img src="/img/2016/09/28/3.png" alt=""></p>
+<p>新增页面会提示未“未设置”字样。如图所示，下面就交大家如何设置顶部页面描述</p>
+<p><img src="/img/2016/09/28/4.png" alt=""></p>
+<p>在新增页面底部如上图所示：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">//新增字段</div><div class="line">xbiaoti //字段名称   字段值：可以填需要展示的页面标题如：“足迹”</div><div class="line">xmiaoshu //字段名称  字段值：可以填需要展示的页面描述如：“我们</div><div class="line">走过的每一步都有无数跟随者，当我们走到最后，这些跟随着会继承理想，继续走下去。”</div></pre></td></tr></table></figure></p>
+<p>点击保存效果图如下：</p>
+<p><img src="/img/2016/09/28/5.png" alt=""></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;这是一款仿自然智Typecho模板，历时2两个星期，终于发布了，模板还有很多地方需要完善，后期我也会一直更新，直到没有人用这套主题为止。&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+      <category term="Typecho" scheme="http://bendan.vip/categories/Typecho/"/>
+    
+    
+      <category term="Autumn" scheme="http://bendan.vip/tags/Autumn/"/>
+    
+      <category term="模板" scheme="http://bendan.vip/tags/%E6%A8%A1%E6%9D%BF/"/>
+    
+      <category term="Typecho" scheme="http://bendan.vip/tags/Typecho/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>T-SQL经典语句</title>
+    <link href="http://bendan.vip/2016/09/22/T-SQL%E7%BB%8F%E5%85%B8%E8%AF%AD%E5%8F%A5/"/>
+    <id>http://bendan.vip/2016/09/22/T-SQL经典语句/</id>
+    <published>2016-09-22T05:46:34.000Z</published>
+    <updated>2016-09-22T06:15:35.034Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="一、基础"><a href="#一、基础" class="headerlink" title="一、基础"></a>一、基础</h2><p><strong>1、说明：创建数据库</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">CREATE DATABASE database-name</div></pre></td></tr></table></figure></p>
+<p><strong>2、说明：删除数据库</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">drop database dbname</div></pre></td></tr></table></figure></p>
+<p><strong>3、说明：备份sql server</strong><br>创建 备份数据的 device<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">USE master</div><div class="line">EXEC sp_addumpdevice &apos;disk&apos;, &apos;testBack&apos;, &apos;c:\mssql7backup\MyNwind_1.dat&apos;</div><div class="line">/*开始 备份*/</div><div class="line">BACKUP DATABASE pubs TO testBack</div></pre></td></tr></table></figure></p>
+<a id="more"></a>
+<p><strong>4、说明：创建新表</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">create table tabname(col1 type1 [not null] [primary key],col2 type2 [not null],..)</div><div class="line">根据已有的表创建新表： </div><div class="line">A：create table tab_new like tab_old (使用旧表创建新表)</div><div class="line">B：create table tab_new as select col1,col2… from tab_old definition only</div></pre></td></tr></table></figure>
+<p><strong>5、说明：删除新表</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">drop table tabname</div></pre></td></tr></table></figure>
+<p><strong>6、说明：增加一个列</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Alter table tabname add column col type</div></pre></td></tr></table></figure>
+<blockquote>
+<p>注：列增加后将不能删除。DB2中列加上后数据类型也不能改变，唯一能改变的是增加varchar类型的长度。</p>
+</blockquote>
+<p><strong>7、说明：添加主键：</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Alter table tabname add primary key(col)</div></pre></td></tr></table></figure>
+<p><strong>说明：删除主键：</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Alter table tabname drop primary key(col)</div></pre></td></tr></table></figure></p>
+<p><strong>8、说明：创建索引：</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">create [unique] index idxname on tabname(col….)</div></pre></td></tr></table></figure></p>
+<p><strong>删除索引：</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">drop index idxname</div></pre></td></tr></table></figure></p>
+<blockquote>
+<p>注：索引是不可更改的，想更改必须删除重新建。</p>
+</blockquote>
+<p><strong>9、说明：创建视图：</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">create view viewname as select statement</div></pre></td></tr></table></figure></p>
+<p><strong>删除视图：</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">drop view viewname</div></pre></td></tr></table></figure></p>
+<p><strong>10、说明：几个简单的基本的sql语句</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">选择：select * from table1 where 范围</div><div class="line">插入：insert into table1(field1,field2) values(value1,value2)</div><div class="line">删除：delete from table1 where 范围</div><div class="line">更新：update table1 set field1=value1 where 范围</div><div class="line">查找：select * from table1 where field1 like ’%value1%’ ---like的语法很精妙，查资料!</div><div class="line">排序：select * from table1 order by field1,field2 [desc]</div><div class="line">总数：select count as totalcount from table1</div><div class="line">求和：select sum(field1) as sumvalue from table1</div><div class="line">平均：select avg(field1) as avgvalue from table1</div><div class="line">最大：select max(field1) as maxvalue from table1</div><div class="line">最小：select min(field1) as minvalue from table1</div></pre></td></tr></table></figure></p>
+<p><strong>11、说明：几个高级查询运算词</strong></p>
+<ul>
+<li><p>A： UNION 运算符<br>UNION 运算符通过组合其他两个结果表（例如 TABLE1 和 TABLE2）并消去表中任何重复行而派生出一个结果表。当 ALL 随 UNION 一起使用时（即 UNION ALL），不消除重复行。两种情况下，派生表的每一行不是来自 TABLE1 就是来自 TABLE2。 </p>
+</li>
+<li><p>B： EXCEPT 运算符<br>EXCEPT 运算符通过包括所有在 TABLE1 中但不在 TABLE2 中的行并消除所有重复行而派生出一个结果表。当 ALL 随 EXCEPT 一起使用时 (EXCEPT ALL)，不消除重复行。 </p>
+</li>
+<li><p>C： INTERSECT 运算符<br>INTERSECT 运算符通过只包括 TABLE1 和 TABLE2 中都有的行并消除所有重复行而派生出一个结果表。当 ALL 随 INTERSECT 一起使用时 (INTERSECT ALL)，不消除重复行。<br>注：使用运算词的几个查询结果行必须是一致的。 </p>
+</li>
+</ul>
+<p><strong>12、说明：使用外连接 </strong></p>
+<ul>
+<li><p>A、left outer join：<br>左外连接（左连接）：结果集几包括连接表的匹配行，也包括左连接表的所有行。<br>SQL: select a.a, a.b, a.c, b.c, b.d, b.f from a LEFT OUT JOIN b ON a.a = b.c</p>
+</li>
+<li><p>B：right outer join:<br>右外连接(右连接)：结果集既包括连接表的匹配连接行，也包括右连接表的所有行。</p>
+</li>
+<li><p>C：full outer join：<br>全外连接：不仅包括符号连接表的匹配行，还包括两个连接表中的所有记录。</p>
+</li>
+</ul>
+<h2 id="二、提升"><a href="#二、提升" class="headerlink" title="二、提升"></a>二、提升</h2><p><strong>1、说明：复制表(只复制结构,源表名：a 新表名：b) (Access可用)</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">法一：select * into b from a where 1&lt;&gt;1</div><div class="line">法二：select top 0 * into b from a</div></pre></td></tr></table></figure></p>
+<p><strong>2、说明：拷贝表(拷贝数据,源表名：a 目标表名：b) (Access可用)</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">insert into b(a, b, c) select d,e,f from b;</div></pre></td></tr></table></figure></p>
+<p><strong>3、说明：跨数据库之间表的拷贝(具体数据使用绝对路径) (Access可用)</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">insert into b(a, b, c) select d,e,f from b in ‘具体数据库’ where 条件</div><div class="line">例子：..from b in &apos;&quot;&amp;Server.MapPath(&quot;.&quot;)&amp;&quot;\data.mdb&quot; &amp;&quot;&apos; where..</div></pre></td></tr></table></figure></p>
+<p><strong>4、说明：子查询(表名1：a 表名2：b)</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">select a,b,c from a where a IN (select d from b ) 或者: select a,b,c from a where a IN (1,2,3)</div></pre></td></tr></table></figure></p>
+<p><strong>5、说明：显示文章、提交人和最后回复时间</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">select a.title,a.username,b.adddate from table a,(select max(adddate) adddate from table where table.title=a.title) b</div></pre></td></tr></table></figure></p>
+<p><strong>6、说明：外连接查询(表名1：a 表名2：b)</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">select a.a, a.b, a.c, b.c, b.d, b.f from a LEFT OUT JOIN b ON a.a = b.c</div></pre></td></tr></table></figure></p>
+<p><strong>7、说明：在线视图查询(表名1：a )</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">select * from (SELECT a,b,c FROM a) T where t.a &gt; 1;</div></pre></td></tr></table></figure></p>
+<p><strong>8、说明：between的用法,between限制查询数据范围时包括了边界值,not between不包括</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">select * from table1 where time between time1 and time2</div><div class="line">select a,b,c, from table1 where a not between 数值1 and 数值2</div></pre></td></tr></table></figure></p>
+<p><strong>9、说明：in 的使用方法</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">select * from table1 where a [not] in (‘值1’,’值2’,’值4’,’值6’)</div></pre></td></tr></table></figure></p>
+<p><strong>10、说明：两张关联表，删除主表中已经在副表中没有的信息 </strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">delete from table1 where not exists ( select * from table2 where table1.field1=table2.field1 )</div></pre></td></tr></table></figure></p>
+<p><strong>11、说明：四表联查问题：</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">select * from a left inner join b on a.a=b.b right inner join c on a.a=c.c inner join d on a.a=d.d where .....</div></pre></td></tr></table></figure></p>
+<p><strong>12、说明：日程安排提前五分钟提醒 </strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">SQL: select * from 日程安排 where datediff(&apos;minute&apos;,f开始时间,getdate())&gt;5</div></pre></td></tr></table></figure></p>
+<p><strong>13、说明：一条sql 语句搞定数据库分页</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">select top 10 b.* from (select top 20 主键字段,排序字段 from 表名 order by 排序字段 desc) a,表名 b where b.主键字段 = a.主键字段 order by a.排序字段</div></pre></td></tr></table></figure></p>
+<p><strong>14、说明：前10条记录</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">select top 10 * form table1 where 范围</div></pre></td></tr></table></figure></p>
+<p><strong>15、说明：选择在每一组b值相同的数据中对应的a最大的记录的所有信息(类似这样的用法可以用于论坛每月排行榜,每月热销产品分析,按科目成绩排名,等等.)</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">select a,b,c from tablename ta where a=(select max(a) from tablename tb where tb.b=ta.b)</div></pre></td></tr></table></figure></p>
+<p><strong>16、说明：包括所有在 TableA 中但不在 TableB和TableC 中的行并消除所有重复行而派生出一个结果表</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">(select a from tableA ) except (select a from tableB) except (select a from tableC)</div></pre></td></tr></table></figure></p>
+<p><strong>17、说明：随机取出10条数据</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">select top 10 * from tablename order by newid()</div></pre></td></tr></table></figure></p>
+<p><strong>18、说明：随机选择记录</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">select newid()</div></pre></td></tr></table></figure></p>
+<p><strong>19、说明：删除重复记录</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Delete from tablename where id not in (select max(id) from tablename group by col1,col2,...)</div></pre></td></tr></table></figure></p>
+<p><strong>20、说明：列出数据库里所有的表名</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">select name from sysobjects where type=&apos;U&apos;</div></pre></td></tr></table></figure></p>
+<p><strong>21、说明：列出表里的所有的</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">select name from syscolumns where id=object_id(&apos;TableName&apos;)</div></pre></td></tr></table></figure></p>
+<p><strong>22、说明：列示type、vender、pcs字段，以type字段排列，case可以方便地实现多重选择，类似select 中的case。</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">select type,sum(case vender when &apos;A&apos; then pcs else 0 end),sum(case vender when &apos;C&apos; then pcs else 0 end),sum(case vender when &apos;B&apos; then pcs else 0 end) FROM tablename group by type</div><div class="line">显示结果：</div><div class="line">type vender pcs</div><div class="line">电脑 A 1</div><div class="line">电脑 A 1</div><div class="line">光盘 B 2</div><div class="line">光盘 A 2</div><div class="line">手机 B 3</div><div class="line">手机 C 3</div></pre></td></tr></table></figure></p>
+<p><strong>23、说明：初始化表table1</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">TRUNCATE TABLE table1</div></pre></td></tr></table></figure></p>
+<p><strong>24、说明：选择从10到15的记录</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">select top 5 * from (select top 15 * from table order by id asc) table_别名 order by id desc</div></pre></td></tr></table></figure></p>
+<h2 id="三、技巧"><a href="#三、技巧" class="headerlink" title="三、技巧"></a>三、技巧</h2><p><strong>1、1=1，1=2的使用，在SQL语句组合时用的较多“where 1=1” 是表示选择全部   “where 1=2”全部不选，</strong><br>如：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">if @strWhere !=&apos;&apos; </div><div class="line">begin</div><div class="line">set @strSQL = &apos;select count(*) as Total from [&apos; + @tblName + &apos;] where &apos; + @strWhere </div><div class="line">end</div><div class="line">else </div><div class="line">begin</div><div class="line">set @strSQL = &apos;select count(*) as Total from [&apos; + @tblName + &apos;]&apos; </div><div class="line">end</div><div class="line">我们可以直接写成</div><div class="line">set @strSQL = &apos;select count(*) as Total from [&apos; + @tblName + &apos;] where 1=1 安定 &apos;+ @strWhere</div></pre></td></tr></table></figure></p>
+<p><strong>2、收缩数据库</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">--重建索引</div><div class="line">DBCC REINDEX</div><div class="line">DBCC INDEXDEFRAG</div><div class="line">--收缩数据和日志</div><div class="line">DBCC SHRINKDB</div><div class="line">DBCC SHRINKFILE</div></pre></td></tr></table></figure></p>
+<p><strong>3、压缩数据库</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">dbcc shrinkdatabase(dbname)</div></pre></td></tr></table></figure></p>
+<p><strong>4、转移数据库给新用户以已存在用户权限</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">exec sp_change_users_login &apos;update_one&apos;,&apos;newname&apos;,&apos;oldname&apos;</div><div class="line">go</div></pre></td></tr></table></figure></p>
+<p><strong>5、检查备份集</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">RESTORE VERIFYONLY from disk=&apos;E:\dvbbs.bak&apos;</div></pre></td></tr></table></figure></p>
+<p><strong>6、修复数据库</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">ALTER DATABASE [dvbbs] SET SINGLE_USER</div><div class="line">GO</div><div class="line">DBCC CHECKDB(&apos;dvbbs&apos;,repair_allow_data_loss) WITH TABLOCK</div><div class="line">GO</div><div class="line">ALTER DATABASE [dvbbs] SET MULTI_USER</div><div class="line">GO</div></pre></td></tr></table></figure></p>
+<p><strong>7、日志清除</strong><br><figure class="highlight plain"><figcaption><span>NOCOUNT ON</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div></pre></td><td class="code"><pre><div class="line">DECLARE @LogicalFileName sysname,</div><div class="line">        @MaxMinutes INT,</div><div class="line">        @NewSize INT</div><div class="line"></div><div class="line">USE     tablename             -- 要操作的数据库名</div><div class="line">SELECT @LogicalFileName = &apos;tablename_log&apos;, -- 日志文件名</div><div class="line">@MaxMinutes = 10,               -- Limit on time allowed to wrap log.</div><div class="line">        @NewSize = 1                  -- 你想设定的日志文件的大小(M)</div><div class="line">-- Setup / initialize</div><div class="line">DECLARE @OriginalSize int</div><div class="line">SELECT @OriginalSize = size </div><div class="line">FROM sysfiles</div><div class="line">WHERE name = @LogicalFileName</div><div class="line">SELECT &apos;Original Size of &apos; + db_name() + &apos; LOG is &apos; + </div><div class="line">        CONVERT(VARCHAR(30),@OriginalSize) + &apos; 8K pages or &apos; + </div><div class="line">        CONVERT(VARCHAR(30),(@OriginalSize*8/1024)) + &apos;MB&apos;</div><div class="line">FROM sysfiles</div><div class="line">WHERE name = @LogicalFileName</div><div class="line">CREATE TABLE DummyTrans</div><div class="line">(DummyColumn char (8000) not null)</div><div class="line"></div><div class="line">DECLARE @Counter   INT,</div><div class="line">        @StartTime DATETIME,</div><div class="line">        @TruncLog VARCHAR(255)</div><div class="line">SELECT @StartTime = GETDATE(),</div><div class="line">        @TruncLog = &apos;BACKUP LOG &apos; + db_name() + &apos; WITH TRUNCATE_ONLY&apos;</div><div class="line">DBCC SHRINKFILE (@LogicalFileName, @NewSize)</div><div class="line">EXEC (@TruncLog)</div><div class="line">-- Wrap the log if necessary.</div><div class="line">WHILE     @MaxMinutes &gt; DATEDIFF (mi, @StartTime, GETDATE()) -- time has not expired</div><div class="line">      AND @OriginalSize = (SELECT size FROM sysfiles WHERE name = @LogicalFileName) </div><div class="line">      AND (@OriginalSize * 8 /1024) &gt; @NewSize </div><div class="line">BEGIN -- Outer loop.</div><div class="line">    SELECT @Counter = 0</div><div class="line">    WHILE ((@Counter &lt; @OriginalSize / 16) AND (@Counter &lt; 50000))</div><div class="line">      BEGIN -- update</div><div class="line">        INSERT DummyTrans VALUES (&apos;Fill Log&apos;) </div><div class="line">        DELETE DummyTrans</div><div class="line">        SELECT @Counter = @Counter + 1</div><div class="line">      END   </div><div class="line">    EXEC (@TruncLog) </div><div class="line">END   </div><div class="line">SELECT &apos;Final Size of &apos; + db_name() + &apos; LOG is &apos; +</div><div class="line">        CONVERT(VARCHAR(30),size) + &apos; 8K pages or &apos; + </div><div class="line">        CONVERT(VARCHAR(30),(size*8/1024)) + &apos;MB&apos;</div><div class="line">FROM sysfiles </div><div class="line">WHERE name = @LogicalFileName</div><div class="line">DROP TABLE DummyTrans</div><div class="line">SET NOCOUNT OFF</div></pre></td></tr></table></figure></p>
+<p><strong>8、说明：更改某个表</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">exec sp_changeobjectowner &apos;tablename&apos;,&apos;dbo&apos;</div></pre></td></tr></table></figure></p>
+<p><strong>9、存储更改全部表</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div></pre></td><td class="code"><pre><div class="line">CREATE PROCEDURE dbo.User_ChangeObjectOwnerBatch</div><div class="line">@OldOwner as NVARCHAR(128),</div><div class="line">@NewOwner as NVARCHAR(128)</div><div class="line">AS</div><div class="line">DECLARE @Name   as NVARCHAR(128)</div><div class="line">DECLARE @Owner as NVARCHAR(128)</div><div class="line">DECLARE @OwnerName as NVARCHAR(128)</div><div class="line">DECLARE curObject CURSOR FOR </div><div class="line">select &apos;Name&apos;   = name,</div><div class="line">&apos;Owner&apos;   = user_name(uid)</div><div class="line">from sysobjects</div><div class="line">where user_name(uid)=@OldOwner</div><div class="line">order by name</div><div class="line">OPEN curObject</div><div class="line">FETCH NEXT FROM curObject INTO @Name, @Owner</div><div class="line">WHILE(@@FETCH_STATUS=0)</div><div class="line">BEGIN     </div><div class="line">if @Owner=@OldOwner </div><div class="line">begin</div><div class="line">set @OwnerName = @OldOwner + &apos;.&apos; + rtrim(@Name)</div><div class="line">exec sp_changeobjectowner @OwnerName, @NewOwner</div><div class="line">end</div><div class="line">-- select @name,@NewOwner,@OldOwner</div><div class="line">FETCH NEXT FROM curObject INTO @Name, @Owner</div><div class="line">END</div><div class="line">close curObject</div><div class="line">deallocate curObject</div><div class="line">GO</div></pre></td></tr></table></figure></p>
+<p><strong>10、SQL SERVER中直接循环写入数据</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">declare @i int</div><div class="line">set @i=1</div><div class="line">while @i&lt;30</div><div class="line">begin</div><div class="line">   insert into test (userid) values(@i)</div><div class="line">   set @i=@i+1</div><div class="line">end</div></pre></td></tr></table></figure></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;一、基础&quot;&gt;&lt;a href=&quot;#一、基础&quot; class=&quot;headerlink&quot; title=&quot;一、基础&quot;&gt;&lt;/a&gt;一、基础&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;1、说明：创建数据库&lt;/strong&gt;&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;CREATE DATABASE database-name&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;2、说明：删除数据库&lt;/strong&gt;&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;drop database dbname&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;3、说明：备份sql server&lt;/strong&gt;&lt;br&gt;创建 备份数据的 device&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;4&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;USE master&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;EXEC sp_addumpdevice &amp;apos;disk&amp;apos;, &amp;apos;testBack&amp;apos;, &amp;apos;c:\mssql7backup\MyNwind_1.dat&amp;apos;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;/*开始 备份*/&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;BACKUP DATABASE pubs TO testBack&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="SQL SERVER" scheme="http://bendan.vip/categories/SQL-SERVER/"/>
+    
+    
+      <category term="数据库" scheme="http://bendan.vip/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    
+      <category term="T-SQL" scheme="http://bendan.vip/tags/T-SQL/"/>
+    
+  </entry>
   
   <entry>
     <title>SQL Server 2016正式版安装配置过程图文详解</title>
@@ -217,7 +369,7 @@
 <p>或者也可以直接用&lt; &gt;，将网址或者邮箱地址放在中间，也能将地址直接转成链接：</p>
 <figure class="highlight ruby"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">&lt;admin@3gjn.com&gt;</div></pre></td></tr></table></figure>
 <p>效果如下</p>
-<p><a href="&#109;&#x61;&#x69;&#108;&#116;&#x6f;&#x3a;&#97;&#100;&#x6d;&#x69;&#110;&#x40;&#x33;&#x67;&#x6a;&#110;&#x2e;&#99;&#x6f;&#x6d;">&#97;&#100;&#x6d;&#x69;&#110;&#x40;&#x33;&#x67;&#x6a;&#110;&#x2e;&#99;&#x6f;&#x6d;</a></p>
+<p><a href="&#109;&#97;&#x69;&#x6c;&#x74;&#111;&#x3a;&#97;&#x64;&#109;&#x69;&#x6e;&#64;&#x33;&#103;&#x6a;&#110;&#46;&#99;&#x6f;&#x6d;">&#97;&#x64;&#109;&#x69;&#x6e;&#64;&#x33;&#103;&#x6a;&#110;&#46;&#99;&#x6f;&#x6d;</a></p>
 <p>表格</p>
 <p>在 Markdown 中，可以制作表格，例如：</p>
 <figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">&lt;table&gt;</div><div class="line">   &lt;tr&gt;</div><div class="line">        &lt;td&gt;First Header&lt;/td&gt;</div><div class="line">        &lt;td&gt;Second Header&lt;/td&gt;</div><div class="line">        &lt;td&gt;Second Header&lt;/td&gt;</div><div class="line">   &lt;/tr&gt;</div><div class="line">  &lt;tr&gt;</div><div class="line">        &lt;td&gt;Content Cell&lt;/td&gt; </div><div class="line">        &lt;td&gt;Content Cell&lt;/td&gt; </div><div class="line">        &lt;td&gt;Content Cell&lt;/td&gt;</div><div class="line">  &lt;/tr&gt;</div><div class="line">&lt;/table&gt;</div></pre></td></tr></table></figure>
@@ -565,11 +717,11 @@
     
       <category term="HEXO配置" scheme="http://bendan.vip/tags/HEXO%E9%85%8D%E7%BD%AE/"/>
     
-      <category term="Github" scheme="http://bendan.vip/tags/Github/"/>
-    
       <category term="node.js" scheme="http://bendan.vip/tags/node-js/"/>
     
       <category term="GIT" scheme="http://bendan.vip/tags/GIT/"/>
+    
+      <category term="Github" scheme="http://bendan.vip/tags/Github/"/>
     
   </entry>
   
