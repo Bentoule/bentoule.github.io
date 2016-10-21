@@ -4,9 +4,9 @@
   
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://bendan.vip/"/>
+  <link href="http://blog.bendan.vip/"/>
   <updated>2016-09-30T01:52:20.713Z</updated>
-  <id>http://bendan.vip/</id>
+  <id>http://blog.bendan.vip/</id>
   
   <author>
     <name>BenDan</name>
@@ -17,8 +17,8 @@
   
   <entry>
     <title>TYPECHO响应式主题 :Autumn 1.0 发布</title>
-    <link href="http://bendan.vip/2016/09/28/TYPECHO%E5%93%8D%E5%BA%94%E5%BC%8F%E4%B8%BB%E9%A2%98-Autumn-1-0-%E5%8F%91%E5%B8%83/"/>
-    <id>http://bendan.vip/2016/09/28/TYPECHO响应式主题-Autumn-1-0-发布/</id>
+    <link href="http://blog.bendan.vip/2016/09/28/TYPECHO%E5%93%8D%E5%BA%94%E5%BC%8F%E4%B8%BB%E9%A2%98-Autumn-1-0-%E5%8F%91%E5%B8%83/"/>
+    <id>http://blog.bendan.vip/2016/09/28/TYPECHO响应式主题-Autumn-1-0-发布/</id>
     <published>2016-09-28T11:37:05.000Z</published>
     <updated>2016-09-30T01:52:20.713Z</updated>
     
@@ -54,21 +54,21 @@
     
     </summary>
     
-      <category term="Typecho" scheme="http://bendan.vip/categories/Typecho/"/>
+      <category term="Typecho" scheme="http://blog.bendan.vip/categories/Typecho/"/>
     
     
-      <category term="Autumn" scheme="http://bendan.vip/tags/Autumn/"/>
+      <category term="Autumn" scheme="http://blog.bendan.vip/tags/Autumn/"/>
     
-      <category term="模板" scheme="http://bendan.vip/tags/%E6%A8%A1%E6%9D%BF/"/>
+      <category term="模板" scheme="http://blog.bendan.vip/tags/%E6%A8%A1%E6%9D%BF/"/>
     
-      <category term="Typecho" scheme="http://bendan.vip/tags/Typecho/"/>
+      <category term="Typecho" scheme="http://blog.bendan.vip/tags/Typecho/"/>
     
   </entry>
   
   <entry>
     <title>T-SQL经典语句</title>
-    <link href="http://bendan.vip/2016/09/22/T-SQL%E7%BB%8F%E5%85%B8%E8%AF%AD%E5%8F%A5/"/>
-    <id>http://bendan.vip/2016/09/22/T-SQL经典语句/</id>
+    <link href="http://blog.bendan.vip/2016/09/22/T-SQL%E7%BB%8F%E5%85%B8%E8%AF%AD%E5%8F%A5/"/>
+    <id>http://blog.bendan.vip/2016/09/22/T-SQL经典语句/</id>
     <published>2016-09-22T05:46:34.000Z</published>
     <updated>2016-09-22T06:15:35.034Z</updated>
     
@@ -158,19 +158,19 @@
     
     </summary>
     
-      <category term="SQL SERVER" scheme="http://bendan.vip/categories/SQL-SERVER/"/>
+      <category term="SQL SERVER" scheme="http://blog.bendan.vip/categories/SQL-SERVER/"/>
     
     
-      <category term="T-SQL" scheme="http://bendan.vip/tags/T-SQL/"/>
+      <category term="T-SQL" scheme="http://blog.bendan.vip/tags/T-SQL/"/>
     
-      <category term="数据库" scheme="http://bendan.vip/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+      <category term="数据库" scheme="http://blog.bendan.vip/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
     
   </entry>
   
   <entry>
     <title>SQL Server 2016正式版安装配置过程图文详解</title>
-    <link href="http://bendan.vip/2016/09/04/SQL-Server-2016%E6%AD%A3%E5%BC%8F%E7%89%88%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E8%BF%87%E7%A8%8B%E5%9B%BE%E6%96%87%E8%AF%A6%E8%A7%A3/"/>
-    <id>http://bendan.vip/2016/09/04/SQL-Server-2016正式版安装配置过程图文详解/</id>
+    <link href="http://blog.bendan.vip/2016/09/04/SQL-Server-2016%E6%AD%A3%E5%BC%8F%E7%89%88%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E8%BF%87%E7%A8%8B%E5%9B%BE%E6%96%87%E8%AF%A6%E8%A7%A3/"/>
+    <id>http://blog.bendan.vip/2016/09/04/SQL-Server-2016正式版安装配置过程图文详解/</id>
     <published>2016-09-04T02:08:47.000Z</published>
     <updated>2016-09-04T02:33:19.537Z</updated>
     
@@ -213,19 +213,19 @@
     
     </summary>
     
-      <category term="SQL SERVER" scheme="http://bendan.vip/categories/SQL-SERVER/"/>
+      <category term="SQL SERVER" scheme="http://blog.bendan.vip/categories/SQL-SERVER/"/>
     
     
-      <category term="数据库" scheme="http://bendan.vip/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+      <category term="数据库" scheme="http://blog.bendan.vip/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
     
-      <category term="SQL SERVER" scheme="http://bendan.vip/tags/SQL-SERVER/"/>
+      <category term="SQL SERVER" scheme="http://blog.bendan.vip/tags/SQL-SERVER/"/>
     
   </entry>
   
   <entry>
     <title>ASP.NET MVC5 入门教程（一）-概念</title>
-    <link href="http://bendan.vip/2016/08/29/ASP-NET-MVC-5-%E5%85%A5%E9%97%A8-%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"/>
-    <id>http://bendan.vip/2016/08/29/ASP-NET-MVC-5-入门-基础知识/</id>
+    <link href="http://blog.bendan.vip/2016/08/29/ASP-NET-MVC-5-%E5%85%A5%E9%97%A8-%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"/>
+    <id>http://blog.bendan.vip/2016/08/29/ASP-NET-MVC-5-入门-基础知识/</id>
     <published>2016-08-29T01:23:10.000Z</published>
     <updated>2016-08-29T09:35:02.081Z</updated>
     
@@ -316,19 +316,19 @@
     
     </summary>
     
-      <category term="ASP.NET" scheme="http://bendan.vip/categories/ASP-NET/"/>
+      <category term="ASP.NET" scheme="http://blog.bendan.vip/categories/ASP-NET/"/>
     
     
-      <category term="C#" scheme="http://bendan.vip/tags/C/"/>
+      <category term="C#" scheme="http://blog.bendan.vip/tags/C/"/>
     
-      <category term="MVC" scheme="http://bendan.vip/tags/MVC/"/>
+      <category term="MVC" scheme="http://blog.bendan.vip/tags/MVC/"/>
     
   </entry>
   
   <entry>
     <title> Markdown语法介绍</title>
-    <link href="http://bendan.vip/2016/08/24/Markdown%E8%AF%AD%E6%B3%95%E4%BB%8B%E7%BB%8D/"/>
-    <id>http://bendan.vip/2016/08/24/Markdown语法介绍/</id>
+    <link href="http://blog.bendan.vip/2016/08/24/Markdown%E8%AF%AD%E6%B3%95%E4%BB%8B%E7%BB%8D/"/>
+    <id>http://blog.bendan.vip/2016/08/24/Markdown语法介绍/</id>
     <published>2016-08-24T06:06:29.000Z</published>
     <updated>2016-08-24T08:33:00.184Z</updated>
     
@@ -365,11 +365,11 @@
 <h2 id="自动链接"><a href="#自动链接" class="headerlink" title="自动链接"></a>自动链接</h2><p>方括号显示说明，圆括号内显示网址， Markdown 会自动把它转成链接，例如：</p>
 <figure class="highlight ruby"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">[BenDan的博客](<span class="symbol">http:</span>/<span class="regexp">/bendan.vip)</span></div></pre></td></tr></table></figure>
 <p>效果如下</p>
-<p><a href="http://bendan.vip">BenDan的博客</a></p>
+<p><a href="http://bendan.vip" target="_blank" rel="external">BenDan的博客</a></p>
 <p>或者也可以直接用&lt; &gt;，将网址或者邮箱地址放在中间，也能将地址直接转成链接：</p>
 <figure class="highlight ruby"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">&lt;admin@3gjn.com&gt;</div></pre></td></tr></table></figure>
 <p>效果如下</p>
-<p><a href="&#109;&#97;&#105;&#108;&#x74;&#111;&#58;&#x61;&#x64;&#109;&#x69;&#x6e;&#x40;&#51;&#103;&#x6a;&#x6e;&#46;&#99;&#x6f;&#109;">&#x61;&#x64;&#109;&#x69;&#x6e;&#x40;&#51;&#103;&#x6a;&#x6e;&#46;&#99;&#x6f;&#109;</a></p>
+<p><a href="&#x6d;&#x61;&#x69;&#108;&#116;&#x6f;&#x3a;&#x61;&#100;&#x6d;&#x69;&#110;&#x40;&#51;&#103;&#106;&#x6e;&#46;&#x63;&#x6f;&#109;">&#x61;&#100;&#x6d;&#x69;&#110;&#x40;&#51;&#103;&#106;&#x6e;&#46;&#x63;&#x6f;&#109;</a></p>
 <p>表格</p>
 <p>在 Markdown 中，可以制作表格，例如：</p>
 <figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">&lt;table&gt;</div><div class="line">   &lt;tr&gt;</div><div class="line">        &lt;td&gt;First Header&lt;/td&gt;</div><div class="line">        &lt;td&gt;Second Header&lt;/td&gt;</div><div class="line">        &lt;td&gt;Second Header&lt;/td&gt;</div><div class="line">   &lt;/tr&gt;</div><div class="line">  &lt;tr&gt;</div><div class="line">        &lt;td&gt;Content Cell&lt;/td&gt; </div><div class="line">        &lt;td&gt;Content Cell&lt;/td&gt; </div><div class="line">        &lt;td&gt;Content Cell&lt;/td&gt;</div><div class="line">  &lt;/tr&gt;</div><div class="line">&lt;/table&gt;</div></pre></td></tr></table></figure>
@@ -395,19 +395,19 @@
     
     </summary>
     
-      <category term="HELP" scheme="http://bendan.vip/categories/HELP/"/>
+      <category term="HELP" scheme="http://blog.bendan.vip/categories/HELP/"/>
     
     
-      <category term="HEXO" scheme="http://bendan.vip/tags/HEXO/"/>
+      <category term="HEXO" scheme="http://blog.bendan.vip/tags/HEXO/"/>
     
-      <category term="Markdown" scheme="http://bendan.vip/tags/Markdown/"/>
+      <category term="Markdown" scheme="http://blog.bendan.vip/tags/Markdown/"/>
     
   </entry>
   
   <entry>
     <title>GitHub+Hexo配置系列教程-Hexo+GitHub关联-三</title>
-    <link href="http://bendan.vip/2016/08/23/GitHub-Hexo%E9%85%8D%E7%BD%AE%E7%B3%BB%E5%88%97%E6%95%99%E7%A8%8B-Hexo-GitHub%E5%85%B3%E8%81%94-%E4%B8%89/"/>
-    <id>http://bendan.vip/2016/08/23/GitHub-Hexo配置系列教程-Hexo-GitHub关联-三/</id>
+    <link href="http://blog.bendan.vip/2016/08/23/GitHub-Hexo%E9%85%8D%E7%BD%AE%E7%B3%BB%E5%88%97%E6%95%99%E7%A8%8B-Hexo-GitHub%E5%85%B3%E8%81%94-%E4%B8%89/"/>
+    <id>http://blog.bendan.vip/2016/08/23/GitHub-Hexo配置系列教程-Hexo-GitHub关联-三/</id>
     <published>2016-08-23T08:43:57.000Z</published>
     <updated>2016-08-24T00:53:26.121Z</updated>
     
@@ -475,21 +475,21 @@
     
     </summary>
     
-      <category term="HEXO" scheme="http://bendan.vip/categories/HEXO/"/>
+      <category term="HEXO" scheme="http://blog.bendan.vip/categories/HEXO/"/>
     
     
-      <category term="HEXO" scheme="http://bendan.vip/tags/HEXO/"/>
+      <category term="HEXO" scheme="http://blog.bendan.vip/tags/HEXO/"/>
     
-      <category term="HEXO配置" scheme="http://bendan.vip/tags/HEXO%E9%85%8D%E7%BD%AE/"/>
+      <category term="HEXO配置" scheme="http://blog.bendan.vip/tags/HEXO%E9%85%8D%E7%BD%AE/"/>
     
-      <category term="Github" scheme="http://bendan.vip/tags/Github/"/>
+      <category term="Github" scheme="http://blog.bendan.vip/tags/Github/"/>
     
   </entry>
   
   <entry>
     <title>GitHub+Hexo配置系列教程-GitHub配置(二)</title>
-    <link href="http://bendan.vip/2016/08/23/GitHub-Hexo%E9%85%8D%E7%BD%AE%E7%B3%BB%E5%88%97%E6%95%99%E7%A8%8B-GitHub%E9%85%8D%E7%BD%AE-%E4%BA%8C/"/>
-    <id>http://bendan.vip/2016/08/23/GitHub-Hexo配置系列教程-GitHub配置-二/</id>
+    <link href="http://blog.bendan.vip/2016/08/23/GitHub-Hexo%E9%85%8D%E7%BD%AE%E7%B3%BB%E5%88%97%E6%95%99%E7%A8%8B-GitHub%E9%85%8D%E7%BD%AE-%E4%BA%8C/"/>
+    <id>http://blog.bendan.vip/2016/08/23/GitHub-Hexo配置系列教程-GitHub配置-二/</id>
     <published>2016-08-23T02:41:06.000Z</published>
     <updated>2016-08-23T08:36:17.494Z</updated>
     
@@ -616,21 +616,21 @@
     
     </summary>
     
-      <category term="HEXO" scheme="http://bendan.vip/categories/HEXO/"/>
+      <category term="HEXO" scheme="http://blog.bendan.vip/categories/HEXO/"/>
     
     
-      <category term="HEXO" scheme="http://bendan.vip/tags/HEXO/"/>
+      <category term="HEXO" scheme="http://blog.bendan.vip/tags/HEXO/"/>
     
-      <category term="HEXO配置" scheme="http://bendan.vip/tags/HEXO%E9%85%8D%E7%BD%AE/"/>
+      <category term="HEXO配置" scheme="http://blog.bendan.vip/tags/HEXO%E9%85%8D%E7%BD%AE/"/>
     
-      <category term="Github" scheme="http://bendan.vip/tags/Github/"/>
+      <category term="Github" scheme="http://blog.bendan.vip/tags/Github/"/>
     
   </entry>
   
   <entry>
     <title>GitHub+Hexo 配置系列教程 -HEXO配置 （一）</title>
-    <link href="http://bendan.vip/2016/08/21/GitHub-Hexo-%E9%85%8D%E7%BD%AE%E7%B3%BB%E5%88%97%E6%95%99%E7%A8%8B-HEXO%E9%85%8D%E7%BD%AE-%EF%BC%88%E4%B8%80%EF%BC%89/"/>
-    <id>http://bendan.vip/2016/08/21/GitHub-Hexo-配置系列教程-HEXO配置-（一）/</id>
+    <link href="http://blog.bendan.vip/2016/08/21/GitHub-Hexo-%E9%85%8D%E7%BD%AE%E7%B3%BB%E5%88%97%E6%95%99%E7%A8%8B-HEXO%E9%85%8D%E7%BD%AE-%EF%BC%88%E4%B8%80%EF%BC%89/"/>
+    <id>http://blog.bendan.vip/2016/08/21/GitHub-Hexo-配置系列教程-HEXO配置-（一）/</id>
     <published>2016-08-21T00:13:13.000Z</published>
     <updated>2016-08-23T02:11:41.204Z</updated>
     
@@ -710,25 +710,25 @@
     
     </summary>
     
-      <category term="HEXO" scheme="http://bendan.vip/categories/HEXO/"/>
+      <category term="HEXO" scheme="http://blog.bendan.vip/categories/HEXO/"/>
     
     
-      <category term="HEXO" scheme="http://bendan.vip/tags/HEXO/"/>
+      <category term="HEXO" scheme="http://blog.bendan.vip/tags/HEXO/"/>
     
-      <category term="HEXO配置" scheme="http://bendan.vip/tags/HEXO%E9%85%8D%E7%BD%AE/"/>
+      <category term="HEXO配置" scheme="http://blog.bendan.vip/tags/HEXO%E9%85%8D%E7%BD%AE/"/>
     
-      <category term="node.js" scheme="http://bendan.vip/tags/node-js/"/>
+      <category term="node.js" scheme="http://blog.bendan.vip/tags/node-js/"/>
     
-      <category term="GIT" scheme="http://bendan.vip/tags/GIT/"/>
+      <category term="GIT" scheme="http://blog.bendan.vip/tags/GIT/"/>
     
-      <category term="Github" scheme="http://bendan.vip/tags/Github/"/>
+      <category term="Github" scheme="http://blog.bendan.vip/tags/Github/"/>
     
   </entry>
   
   <entry>
     <title>Hello World</title>
-    <link href="http://bendan.vip/2016/08/20/hello-world/"/>
-    <id>http://bendan.vip/2016/08/20/hello-world/</id>
+    <link href="http://blog.bendan.vip/2016/08/20/hello-world/"/>
+    <id>http://blog.bendan.vip/2016/08/20/hello-world/</id>
     <published>2016-08-20T00:13:13.000Z</published>
     <updated>2016-08-23T01:03:49.259Z</updated>
     
